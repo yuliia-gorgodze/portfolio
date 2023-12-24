@@ -1,0 +1,45 @@
+.heroContainer {
+  padding-top: 37px;
+  padding-bottom: 125px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+.name {
+  font-size: 76px;
+}
+.location {
+  color: var(--greyText);
+  font-size: 76px;
+  font-style: normal;
+  font-weight: 700;
+  display: inline-block;
+}
+.info {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  display: inline-block;
+  margin-top: 32px;
+}
+.imgHero {
+  position: relative;
+  width: 50%;
+  max-width: 750px;
+  background-image: url(../../images/hero.JPG);
+  background-position: center;
+  height: 650px;
+  overflow: hidden;
+  background-size: cover;
+  opacity: 0.9;
+  z-index: 1;
+}
+.infoContainer {
+  width: 100%;
+  max-width: 720px;
+  padding-right: 40px;
+  transform: translateX(-55px);
+  z-index: 1;
+}

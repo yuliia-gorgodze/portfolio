@@ -1,0 +1,46 @@
+.workExperienceContainer {
+  padding-top: 120px;
+  padding-bottom: 144px;
+  position: relative;
+  z-index: 1;
+  background-color: var(--black);
+}
+.title {
+  font-size: 55px;
+  font-weight: 700;
+  max-width: 780px;
+}
+.workList {
+  display: flex;
+  margin-top: 40px;
+  gap: 24px;
+}
+.workItem {
+  padding-right: 10px;
+  padding-left: 5px;
+}
+.num {
+  font-size: 117px;
+  font-weight: 400;
+  line-height: 120%;
+  color: var(--greyText);
+}
+.nameContainer {
+  font-size: 24px;
+}
+.description {
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 400;
+  margin-top: 16px;
+  display: inline-block;
+}
+.green {
+  color: var(--green);
+}
+.blue {
+  color: var(--blue);
+}
+.pink {
+  color: var(--pink);
+}

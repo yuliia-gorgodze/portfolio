@@ -1,0 +1,21 @@
+.mainContainer {
+  position: relative;
+  background-color: var(--black);
+}
+.bgHero {
+  display: flex;
+  height: 900px;
+  position: fixed;
+  top: 0;
+  z-index: 0;
+  pointer-events: none;
+  width: 100%;
+}
+.bgBlack {
+  background-color: var(--black);
+  width: 40%;
+}
+.bgGrey {
+  background-color: var(--grey);
+  width: 60%;
+}

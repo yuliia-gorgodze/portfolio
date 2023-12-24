@@ -1,0 +1,66 @@
+.container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: var(--black);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  position: relative;
+  z-index: 1;
+}
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-right: 24px;
+  width: calc(100% / 3);
+}
+.title {
+  display: inline-block;
+}
+.description {
+  line-height: 150%;
+  max-width: 368px;
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  width: calc(100% / 3 * 2);
+}
+.item {
+  padding-right: 10px;
+  width: calc(100% / 2 - 24px);
+}
+.icon {
+  width: 32px;
+  height: 32px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 24px;
+}
+.first {
+  background-image: url(../../images/svg/first.svg);
+}
+.second {
+  background-image: url(../../images/svg/second.svg);
+}
+.third {
+  background-image: url(../../images/svg/third.svg);
+}
+.fourth {
+  background-image: url(../../images/svg/fourth.svg);
+}
+.name {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+.descriptionItem {
+  font-size: 16px;
+  line-height: 150%;
+  max-width: 368px;
+  display: inline-block;
+}
