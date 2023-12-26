@@ -1,0 +1,66 @@
+.wrapper {
+  background-color: var(--violet);
+  display: flex;
+  gap: 66px;
+  color: var(--black);
+  position: relative;
+  padding-left: 72px;
+  z-index: 1;
+  height: 500px;
+}
+.title {
+  margin-bottom: 24px;
+}
+.text {
+  color: var(--greyText);
+  display: inline-block;
+}
+.rightSide {
+  background-image: url(../../images/me.JPG);
+  background-position: bottom;
+  background-size: cover;
+  width: 45%;
+}
+.leftSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  width: 55%;
+}
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+}
+.links {
+  gap: 24px;
+  display: flex;
+}
+.link {
+  color: #00000080;
+  text-transform: capitalize;
+  position: relative;
+  width: fit-content;
+  padding-bottom: 7px;
+  display: block;
+}
+.link::after {
+  content: " ";
+  display: block;
+  width: 85%;
+  height: 2px;
+  background-color: #00000060;
+  position: absolute;
+  bottom: -2px;
+  transition:
+    width 0.5s,
+    color 0.5s;
+}
+.link:hover {
+  color: var(--black);
+}
+.link:hover:after {
+  width: 0px;
+  background-color: var(--black);
+}

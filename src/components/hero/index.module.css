@@ -7,7 +7,7 @@
   align-items: center;
 }
 .name {
-  font-size: 76px;
+  font-size: 65px;
 }
 .location {
   color: var(--greyText);
@@ -30,12 +30,15 @@
   max-width: 750px;
   background-image: url(../../images/hero.JPG);
   background-position: center;
-  height: 650px;
-  overflow: hidden;
   background-size: cover;
+  height: 550px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
   opacity: 0.9;
   z-index: 1;
 }
+
 .infoContainer {
   width: 100%;
   max-width: 720px;

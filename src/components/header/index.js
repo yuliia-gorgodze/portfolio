@@ -1,18 +1,43 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import classNames from "classnames";
-import s from "./index.module.css";
+import { motion } from "framer-motion";
 import Nav from "./nav";
+import s from "./index.module.css";
 
-const Header = () => {
+const Header = ({ loading }) => {
+  const variants = {
+    hidden: { x: -200 },
+    enter: { x: 0 },
+  };
+  const variantsNav = {
+    hidden: { x: -200, opacity: 0 },
+    enter: { x: 0, opacity: 1 },
+  };
   return (
     <header className={classNames(s.header, "container")}>
-      <a className={s.logo} href="/">
+      <motion.a
+        transition={{ type: "linear", duration: 1, delay: 2 }}
+        animate={!loading ? "enter" : "hidden"}
+        className={s.logo}
+        variants={variants}
+        initial="hidden"
+        exit="hidden"
+        href="/"
+      >
         Yuliia.G
-      </a>
-      <div className={s.navContainer}>
-        <Nav />
+      </motion.a>
+      <motion.div
+        transition={{ type: "linear", duration: 1.1, delay: 2 }}
+        animate={!loading ? "enter" : "hidden"}
+        className={s.navContainer}
+        variants={variantsNav}
+        initial="hidden"
+        exit="hidden"
+      >
+        <Nav loading={loading} />
         <button className={s.btnContact}>Contact</button>
-      </div>
+      </motion.div>
     </header>
   );
 };

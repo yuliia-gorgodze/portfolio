@@ -37,8 +37,8 @@
   content: " ";
   display: block;
   width: 85%;
-  height: 1px;
-  background-color: #00000080;
+  height: 2px;
+  background-color: #00000060;
   position: absolute;
   bottom: -2px;
   left: 50%;
