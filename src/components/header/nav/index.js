@@ -2,9 +2,9 @@ import React from "react";
 import s from "../index.module.css";
 
 const links = [
-  { title: "Experience", path: "/experience" },
-  { title: "Projects", path: "/projects" },
-  { title: "Skills", path: "/skills" },
+  { title: "Experience", path: "#experience" },
+  { title: "Projects", path: "#projects" },
+  { title: "Skills", path: "#skills" },
 ];
 
 const Nav = () => {

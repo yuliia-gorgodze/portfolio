@@ -62,7 +62,7 @@ const Skillset = () => {
 
   return (
     <>
-      <div className={classNames(s.container, "container")}>
+      <div id="skills" className={classNames(s.container, "container")}>
         <div className={s.titleContainer}>
           <motion.h2
             transition={{ type: "linear", duration: 1 }}
@@ -108,8 +108,6 @@ const Skillset = () => {
           {other?.map((el) => {
             return (
               <li key={el}>
-                {/* <span className={el.className}>{el}</span> */}
-                {/* <span className={s.vocation}>{el}</span> */}
                 <span className={s.description}>{el}</span>
               </li>
             );

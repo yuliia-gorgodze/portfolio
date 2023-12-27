@@ -46,7 +46,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className={classnames(s.wrapperProject, "container")}>
+    <div id="projects" className={classnames(s.wrapperProject, "container")}>
       <div className={s.leftSide}>
         <motion.h2
           transition={{ type: "linear", duration: 1 }}

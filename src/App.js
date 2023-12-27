@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 import SocialLinks from "./components/socialLinks";
 import s from "./App.module.css";
 import Contact from "./components/contact";
+import Footer from "./components/footer";
 
 const variants = {
   hidden: { width: "0%" },
@@ -56,6 +57,7 @@ function App() {
       <Skillset />
       <SocialLinks />
       <Contact />
+      <Footer />
       {/* <PhilosophyValues /> */}
     </div>
   );

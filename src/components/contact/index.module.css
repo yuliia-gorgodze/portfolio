@@ -5,6 +5,9 @@
   margin-top: 120px;
   margin-right: 110px;
   padding-bottom: 120px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .leftSide,
 .rightSide {
@@ -12,7 +15,6 @@
 }
 
 .subtitle {
-  font-size: 18px;
   line-height: 150%;
   color: var(--greyText);
   margin-top: 24px;
@@ -26,18 +28,35 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
+  display: inline-block;
 }
-
+.label {
+  margin-top: 30px;
+}
 input {
   background-color: var(--grey);
   border: none;
   height: 50px;
-  margin-bottom: 40px;
   margin-top: 8px;
+  outline: none;
+  color: var(--white);
+  padding: 5px 10px;
+  width: 100%;
 }
 .btnSubmit {
+  margin-top: 40px;
   width: 100%;
   background-color: var(--primary);
   color: var(--white);
   height: 75px;
+}
+.field {
+  position: relative;
+}
+.errorMessage {
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  font-size: 12px;
+  color: red;
 }

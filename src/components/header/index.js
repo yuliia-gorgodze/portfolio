@@ -16,17 +16,16 @@ const Header = ({ loading }) => {
   };
   return (
     <header className={classNames(s.header, "container")}>
-      <motion.a
+      <motion.span
         transition={{ type: "linear", duration: 1, delay: 2 }}
         animate={!loading ? "enter" : "hidden"}
         className={s.logo}
         variants={variants}
         initial="hidden"
         exit="hidden"
-        href="/"
       >
         Yuliia.G
-      </motion.a>
+      </motion.span>
       <motion.div
         transition={{ type: "linear", duration: 1.1, delay: 2 }}
         animate={!loading ? "enter" : "hidden"}
@@ -36,7 +35,9 @@ const Header = ({ loading }) => {
         exit="hidden"
       >
         <Nav loading={loading} />
-        <button className={s.btnContact}>Contact</button>
+        <a href="#contact" className={s.btnContact}>
+          Contact
+        </a>
       </motion.div>
     </header>
   );

@@ -41,7 +41,10 @@ const WorkExperience = () => {
   };
 
   return (
-    <div className={classnames(s.workExperienceContainer, "container")}>
+    <div
+      id="experience"
+      className={classnames(s.workExperienceContainer, "container")}
+    >
       <motion.h2
         transition={{ type: "linear", duration: 1 }}
         animate={isInView ? "enter" : "hidden"}

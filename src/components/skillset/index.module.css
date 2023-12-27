@@ -12,6 +12,10 @@
   margin-left: auto;
   margin-right: auto;
 }
+.otherContainer {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 .otherList {
   display: flex;
   padding-bottom: 120px;
