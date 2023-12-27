@@ -3,8 +3,8 @@ import s from "../index.module.css";
 
 const links = [
   { title: "Experience", path: "/experience" },
-  { title: "Work", path: "/work" },
-  { title: "Photography", path: "/photography" },
+  { title: "Projects", path: "/projects" },
+  { title: "Skills", path: "/skills" },
 ];
 
 const Nav = () => {

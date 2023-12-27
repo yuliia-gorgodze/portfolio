@@ -17,7 +17,7 @@ const jobs = [
     nameCompany: "Bozhenko",
     vocation: "Frontend Next.js Developer",
     description:
-      "Worked with this company in 2023 from May to September. Completed 2 projects. Online auto parts store, company website.",
+      "Worked with this company in 2023 from May to September. Completed 2 projects. Online auto parts store and company website.",
     className: s.blue,
     color: "#609bff",
   },
@@ -34,12 +34,10 @@ const jobs = [
 const WorkExperience = () => {
   const ref = useRef(null);
   const isInView = useInView(ref);
-  const refVocation = useRef(null);
-  const isInViewVocation = useInView(ref);
 
   const variants = {
     hidden: { opacity: 0, x: -50 },
-    enter: { opacity: 1, x: 0 },
+    enter: { opacity: 0.5, x: 0 },
   };
 
   return (
@@ -64,20 +62,7 @@ const WorkExperience = () => {
               <span className={s.num}>0{i + 1}</span>
               <div className={s.nameContainer}>
                 <span className={el.className}>{el.nameCompany}, </span>
-                <motion.span
-                  transition={{ type: "linear", duration: 1, delay: i }}
-                  animate={!isInViewVocation ? "enter" : "hidden"}
-                  variants={{
-                    hidden: { color: "inherit" },
-                    enter: { color: el.color },
-                  }}
-                  className={s.vocation}
-                  ref={refVocation}
-                  initial="hidden"
-                  exit="hidden"
-                >
-                  {el.vocation}
-                </motion.span>
+                <span className={s.vocation}>{el.vocation}</span>
               </div>
               <span className={s.description}>{el.description}</span>
             </li>

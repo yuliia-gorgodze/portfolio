@@ -1,9 +1,11 @@
 .workExperienceContainer {
   padding-top: 120px;
-  padding-bottom: 144px;
+  padding-bottom: 60px;
   position: relative;
   z-index: 1;
   background-color: var(--black);
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .title {
   font-size: 55px;
@@ -35,6 +37,7 @@
   font-weight: 400;
   margin-top: 16px;
   display: inline-block;
+  color: var(--greyText);
 }
 .vocation {
   transition: color 0.3s;

@@ -1,12 +1,18 @@
 .wrapper {
   background-color: var(--violet);
-  display: flex;
-  gap: 66px;
   color: var(--black);
   position: relative;
   padding-left: 72px;
   z-index: 1;
-  height: 500px;
+}
+.container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 72px;
+  display: flex;
+  height: 400px;
+  gap: 66px;
 }
 .title {
   margin-bottom: 24px;
@@ -16,8 +22,8 @@
   display: inline-block;
 }
 .rightSide {
-  background-image: url(../../images/me.JPG);
-  background-position: bottom;
+  background-image: url(../../images/me.png);
+  background-position: top;
   background-size: cover;
   width: 45%;
 }
@@ -25,8 +31,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   width: 55%;
 }
 .titleContainer {

@@ -4,8 +4,8 @@
 }
 .bgHero {
   display: flex;
-  height: 900px;
-  position: fixed;
+  height: 760px;
+  position: absolute;
   top: 0;
   z-index: 0;
   pointer-events: none;

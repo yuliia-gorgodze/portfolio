@@ -2,6 +2,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .logo {
   font-weight: 700;
@@ -18,8 +21,8 @@
 
 .navMenu {
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   gap: 24px;
 }
 .navLink {
@@ -30,7 +33,7 @@
 }
 
 .btnContact {
-  padding: 32px 24px;
+  padding: 16px 24px;
   background-color: var(--primary);
   color: var(--white);
   z-index: 1;

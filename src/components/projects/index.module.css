@@ -3,17 +3,23 @@
   z-index: 1;
   background-color: var(--black);
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 60px;
   display: flex;
-  gap: 64px;
+  gap: 25px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .leftSide {
+  width: 50%;
   position: sticky;
   top: 100px;
   height: fit-content;
 }
+.rightSide {
+  width: 50%;
+}
 .imgContainer {
-  width: 626px;
   height: 360px;
 }
 .imgContainer > img {
@@ -23,8 +29,38 @@
 .project {
   display: flex;
   flex-direction: column;
-  gap: 120px;
+  gap: 23px;
 }
 .title {
   margin-bottom: 24px;
+  font-size: 36px;
+  font-weight: 700;
+  max-width: 780px;
+  margin-bottom: 81px;
+  display: block;
+}
+.subtitle {
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--greyText);
+}
+
+.card {
+  background-color: #181823;
+}
+
+.cardText {
+  padding: 32px 40px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.cardTitle {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+.cardLink {
+  opacity: 1;
 }

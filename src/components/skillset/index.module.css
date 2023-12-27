@@ -1,6 +1,6 @@
 .container {
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 60px;
   background-color: var(--black);
   color: var(--white);
   display: flex;
@@ -8,6 +8,14 @@
   gap: 24px;
   position: relative;
   z-index: 1;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.otherList {
+  display: flex;
+  padding-bottom: 120px;
+  justify-content: space-between;
 }
 .titleContainer {
   display: flex;
@@ -22,6 +30,8 @@
 .description {
   line-height: 150%;
   max-width: 368px;
+  color: var(--greyText);
+  font-size: 20px;
 }
 .list {
   display: flex;
@@ -38,24 +48,22 @@
   height: 32px;
   background-size: cover;
   background-position: center;
-  margin-bottom: 24px;
 }
 .first {
-  background-image: url(../../images/svg/first.svg);
+  background-image: url(../../images/icons/js.svg);
 }
 .second {
-  background-image: url(../../images/svg/second.svg);
+  background-image: url(../../images/icons/reactIcon.svg);
 }
 .third {
-  background-image: url(../../images/svg/third.svg);
+  background-image: url(../../images/icons/next.svg);
 }
 .fourth {
-  background-image: url(../../images/svg/fourth.svg);
+  background-image: url(../../images/icons/node.svg);
 }
 .name {
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 12px;
   display: inline-block;
 }
 .descriptionItem {
@@ -63,4 +71,14 @@
   line-height: 150%;
   max-width: 368px;
   display: inline-block;
+}
+.scoreContainer {
+  display: flex;
+  margin-bottom: 24px;
+}
+.nameContainer {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 6px;
+  align-items: flex-end;
 }
