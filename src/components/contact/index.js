@@ -72,7 +72,7 @@ const Contact = () => {
   };
 
   return (
-    <div className={classNames(s.container, "container")}>
+    <div id="contact" className={classNames(s.container, "container")}>
       <div className={s.leftSide}>
         <motion.h2
           transition={{ type: "linear", duration: 1 }}

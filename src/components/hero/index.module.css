@@ -8,14 +8,18 @@
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 .name {
   font-size: 65px;
+  white-space: nowrap;
+  font-weight: 700;
 }
 .location {
   color: var(--greyText);
   font-size: 76px;
   font-style: normal;
+  white-space: nowrap;
   font-weight: 700;
   display: inline-block;
 }
@@ -29,22 +33,106 @@
 }
 .imgHero {
   position: relative;
-  width: 50%;
+  height: 100%;
   max-width: 750px;
   background-image: url(../../images/hero.JPG);
   background-position: center;
   background-size: cover;
-  height: 550px;
   overflow: hidden;
   background-repeat: no-repeat;
   opacity: 0.9;
   z-index: 1;
 }
-
+.containerImg {
+  width: calc(100% - 50% - 40px);
+  height: 550px;
+  background-color: var(--black);
+}
 .infoContainer {
-  width: 100%;
-  max-width: 720px;
-  padding-right: 40px;
+  width: 50%;
+  max-width: 750px;
   transform: translateX(-55px);
   z-index: 1;
+}
+.infoContainerMob {
+  display: none;
+}
+@media screen and (max-width: 1240px) {
+  .name {
+    font-size: 50px;
+  }
+  .location {
+    font-size: 60px;
+  }
+  .info {
+    margin-top: 12px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .name {
+    font-size: 36px;
+  }
+  .location {
+    font-size: 48px;
+  }
+  .info {
+    margin-top: 12px;
+  }
+  .containerImg {
+    height: 460px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heroContainer {
+    padding-bottom: 90px;
+  }
+  .containerImg {
+    height: 360px;
+    width: 50%;
+  }
+  .name,
+  .location {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .heroContainer {
+    flex-direction: column;
+    padding-top: 0;
+  }
+  .containerImg {
+    width: 100%;
+  }
+  .location {
+    display: block;
+  }
+  .infoContainer {
+    display: none;
+  }
+  .infoContainerMob {
+    display: block;
+    width: 100%;
+    padding-left: 48px;
+    padding-right: 48px;
+    text-align: center;
+    padding-top: 48px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .infoContainerMob {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .heroContainer {
+    background-color: var(--grey);
+  }
+}
+@media screen and (max-width: 360px) {
+  .name,
+  .location {
+    font-size: 28px;
+  }
 }

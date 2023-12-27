@@ -5,13 +5,14 @@
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 .logo {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 20px;
   position: relative;
-  z-index: 1;
+  z-index: 12;
 }
 
 .navContainer {
@@ -41,4 +42,18 @@
   font-weight: 700;
   line-height: 150%;
   text-transform: capitalize;
+}
+@media screen and (max-width: 700px) {
+  .navContainer {
+    display: none;
+  }
+  .header {
+    height: 55px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .mobMenu {
+    display: none;
+  }
 }

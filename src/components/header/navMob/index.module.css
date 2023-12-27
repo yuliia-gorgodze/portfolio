@@ -1,0 +1,28 @@
+.navListMob {
+  position: absolute;
+  top: 150px;
+  width: 100%;
+  color: var(--white);
+  z-index: 11;
+  text-align: center;
+  display: block;
+}
+.navItemMob {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.navBtnMob {
+  padding: 16px 24px;
+  background-color: var(--primary);
+  color: var(--white);
+  z-index: 1;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  text-transform: capitalize;
+  width: fit-content;
+  margin: 100px auto 0;
+  opacity: 1;
+  display: block;
+}

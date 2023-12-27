@@ -55,3 +55,22 @@
   display: block;
   color: var(--greyText);
 }
+
+@media screen and (max-width: 768px) {
+  .links,
+  .container,
+  .navFooter > ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navFooter {
+    gap: 60px;
+  }
+  .navFooter {
+    transform: none !important;
+    opacity: 1 !important;
+  }
+  .navFooter {
+    margin-bottom: 24px;
+  }
+}

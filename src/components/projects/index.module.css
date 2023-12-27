@@ -12,8 +12,6 @@
 }
 .leftSide {
   width: 50%;
-  position: sticky;
-  top: 100px;
   height: fit-content;
 }
 .rightSide {
@@ -63,4 +61,55 @@
 }
 .cardLink {
   opacity: 1;
+}
+
+@media screen and (max-width: 1240px) {
+  .imgContainer {
+    height: 320px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .wrapperProject {
+    flex-direction: column;
+  }
+  .title {
+    max-width: unset;
+  }
+  .leftSide,
+  .rightSide {
+    width: 100%;
+  }
+  .project {
+    display: flex;
+    flex-direction: row;
+  }
+  .cardText {
+    padding: 24px 20px;
+  }
+
+  .card {
+    width: 50%;
+  }
+  .title {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapperProject {
+    padding-top: 60px;
+  }
+  .project {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+  }
+  .imgContainer {
+    height: auto;
+  }
+  .title {
+    font-size: 32px;
+  }
 }

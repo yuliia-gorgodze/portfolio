@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import Header from "./components/header";
 import Hero from "./components/hero";
 import WorkExperience from "./components/workExperience";
-// import PhilosophyValues from "./components/philosophyValues";
 import Skillset from "./components/skillset";
 import Projects from "./components/projects";
-import { motion } from "framer-motion";
 import SocialLinks from "./components/socialLinks";
-import s from "./App.module.css";
 import Contact from "./components/contact";
 import Footer from "./components/footer";
+import s from "./App.module.css";
 
 const variants = {
   hidden: { width: "0%" },
@@ -58,7 +57,6 @@ function App() {
       <SocialLinks />
       <Contact />
       <Footer />
-      {/* <PhilosophyValues /> */}
     </div>
   );
 }

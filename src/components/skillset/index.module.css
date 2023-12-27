@@ -20,6 +20,9 @@
   display: flex;
   padding-bottom: 120px;
   justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .titleContainer {
   display: flex;
@@ -85,4 +88,39 @@
   gap: 15px;
   margin-bottom: 6px;
   align-items: flex-end;
+}
+
+@media screen and (max-width: 1040px) {
+  .container {
+    flex-direction: column;
+    padding-top: 60px;
+  }
+  .titleContainer {
+    padding-right: 0;
+    width: 100%;
+  }
+  .description {
+    max-width: unset;
+  }
+  .list {
+    width: 100%;
+  }
+  .otherList {
+    gap: 12px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .item {
+    width: 100%;
+  }
+  .descriptionItem {
+    max-width: unset;
+  }
+}
+@media screen and (max-width: 480px) {
+  .otherList {
+    justify-content: flex-start;
+  }
 }
