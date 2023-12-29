@@ -9,10 +9,7 @@ import SocialLinks from "./components/socialLinks";
 import Contact from "./components/contact";
 import Footer from "./components/footer";
 import s from "./App.module.css";
-console.log(
-  "window?.process?.env?.REACT_APP_API_KEY",
-  window?.process?.env?.REACT_APP_API_KEY,
-);
+
 const variants = {
   hidden: { width: "0%" },
   enter: { width: "40%" },

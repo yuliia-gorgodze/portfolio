@@ -1,10 +1,6 @@
 export default async function sendToTg(req, res) {
   if (req.method === "POST") {
     try {
-      console.log(
-        "window?.process?.env?.REACT_APP_API_KEY",
-        window?.process?.env?.REACT_APP_API_KEY,
-      );
       `${
         window?.process?.env?.REACT_APP_API_KEY ||
         "5852135537:AAFYo42e_v1dmPjyiBL0mNpy8bk8SghqjAs"
