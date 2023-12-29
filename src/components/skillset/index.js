@@ -37,17 +37,43 @@ const skills = [
 
 const other = [
   "Figma",
-  "MongoDB",
-  "Tailwind CSS",
-  "Framer Motion",
-  "SWR",
-  "StoryBook",
-  "Jira/Trello/Slack",
-  "Antd",
-  "Web3",
+  "Slack",
+  "Jira",
+  "Trello",
   "Git",
-  "i18next",
+  "-",
+  "Tailwind CSS",
+  "Bootstrap",
+  "Antd",
+  "MaterialUI",
+  "-",
+  "Anijs",
   "ThreeJs",
+  "Framer Motion",
+  "StoryBook",
+  "-",
+  "SWR",
+  "Web3",
+  "GraphQl",
+  "Redux",
+  "ReactRouter",
+  "ReactHookForm",
+  "MongoDB",
+  "Firebase",
+  "Stripe",
+  "-",
+  "JavaScript",
+  "TypeScript",
+  "NodeJs",
+  "HTML5",
+  "CSS/SCSS",
+  "-",
+  "popover",
+  "i18next",
+  "moment",
+  "Lodash",
+  "-",
+  "Jest",
 ];
 
 const Skillset = () => {
@@ -62,6 +88,17 @@ const Skillset = () => {
 
   return (
     <>
+      <div className={classNames(s.otherContainer, "container")}>
+        <ul className={s.otherList}>
+          {other?.map((el) => {
+            return (
+              <li key={el}>
+                <span className={s.description}>{el}</span>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
       <div id="skills" className={classNames(s.container, "container")}>
         <div className={s.titleContainer}>
           <motion.h2
@@ -98,17 +135,6 @@ const Skillset = () => {
                   </div>
                 </div>
                 <span className={s.descriptionItem}>{el.description}</span>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
-      <div className={classNames(s.otherContainer, "container")}>
-        <ul className={s.otherList}>
-          {other?.map((el) => {
-            return (
-              <li key={el}>
-                <span className={s.description}>{el}</span>
               </li>
             );
           })}

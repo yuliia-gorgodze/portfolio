@@ -26,7 +26,7 @@
   font-size: 117px;
   font-weight: 400;
   line-height: 120%;
-  color: var(--greyText);
+  opacity: 0.5;
 }
 .nameContainer {
   font-size: 24px;
@@ -50,6 +50,9 @@
 }
 .pink {
   color: var(--pink);
+}
+.years {
+  color: var(--greyText);
 }
 @media screen and (max-width: 1240px) {
   .workList {

@@ -61,9 +61,9 @@ const Header = ({ loading }) => {
         exit="hidden"
       >
         <Nav loading={loading} />
-        <a href="#contact" className={s.btnContact}>
+        {/* <a href="#contact" className={s.btnContact}>
           Contact
-        </a>
+        </a> */}
       </motion.div>
       <motion.nav
         animate={isOpen ? "open" : "closed"}
