@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import classNames from "classnames";
 import { motion, useInView } from "framer-motion";
 import { HeartOutlined } from "@ant-design/icons";
-// import Nav from "../header/nav";
+import Nav from "../header/nav";
 import s from "./index.module.css";
 
 const Footer = () => {
@@ -32,7 +32,7 @@ const Footer = () => {
             Yuliia.G
           </motion.span>
         </div>
-        {/* <motion.div
+        <motion.div
           transition={{ type: "linear", duration: 1 }}
           animate={isInView ? "enter" : "hidden"}
           variants={variants}
@@ -71,7 +71,7 @@ const Footer = () => {
             </a>
           </div>
           <Nav />
-        </motion.div> */}
+        </motion.div>
       </div>
       <div className={classNames(s.infoContainer, "container")}>
         <span className={s.info}>

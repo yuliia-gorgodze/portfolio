@@ -4,17 +4,18 @@ import classNames from "classnames";
 import { motion, useCycle } from "framer-motion";
 import Nav from "./nav";
 import { useDimensions } from "../hooks/use-dimensions";
-import s from "./index.module.css";
 import { NavMob } from "./navMob";
 import { MenuToggle } from "./menu-toggle";
+
+import s from "./index.module.css";
 
 const Header = ({ loading }) => {
   const [isOpen, toggleOpen] = useCycle(false, true);
   const containerRef = useRef(null);
   const { height } = useDimensions(containerRef);
   const variants = {
-    hidden: { x: -300 },
-    enter: { x: 0 },
+    hidden: { x: -300, opacity: 0 },
+    enter: { x: 0, opacity: 1 },
   };
   const variantsNav = {
     hidden: { x: -300, opacity: 0 },
@@ -62,9 +63,9 @@ const Header = ({ loading }) => {
         exit="hidden"
       >
         <Nav loading={loading} />
-        {/* <a href="#contact" className={s.btnContact}>
+        <a href="#contact" className={s.btnContact}>
           Contact
-        </a> */}
+        </a>
       </motion.div>
       <motion.nav
         animate={isOpen ? "open" : "closed"}
