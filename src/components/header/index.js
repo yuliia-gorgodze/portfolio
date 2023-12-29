@@ -40,6 +40,7 @@ const Header = ({ loading }) => {
       },
     },
   };
+
   return (
     <header className={classNames(s.header, "container")}>
       <motion.span
