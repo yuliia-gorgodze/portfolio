@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.0710486e.css",
-    "main.js": "/portfolio/static/js/main.7a0ddd48.js",
+    "main.css": "/portfolio/static/css/main.285f2a24.css",
+    "main.js": "/portfolio/static/js/main.f5ac4371.js",
     "static/media/hero.JPG": "/portfolio/static/media/hero.926a91f1eea59138e65c.JPG",
     "static/media/me.png": "/portfolio/static/media/me.77b9765a9bac08b6bb5d.png",
     "static/media/dao.png": "/portfolio/static/media/dao.0bfd5d38ee2059db7014.png",
     "static/media/omnitech.png": "/portfolio/static/media/omnitech.3db2d964b4e04038a038.png",
     "static/media/cidt.png": "/portfolio/static/media/cidt.32d3564225d9290eb122.png",
+    "static/media/music.png": "/portfolio/static/media/music.a5b4a5b639257b911fb9.png",
     "static/media/daowallet.png": "/portfolio/static/media/daowallet.fe161c50dd4f5bc34be2.png",
     "static/media/node.svg": "/portfolio/static/media/node.474cb7be2fa5888d465d.svg",
     "static/media/reactIcon.svg": "/portfolio/static/media/reactIcon.d97937e29329a4143c5f.svg",
@@ -14,11 +15,11 @@
     "index.html": "/portfolio/index.html",
     "static/media/js.svg": "/portfolio/static/media/js.29777f5c5bea08cdfa22.svg",
     "static/media/star.svg": "/portfolio/static/media/star.79c410aa30e8d725890e2c3e4c37dac4.svg",
-    "main.0710486e.css.map": "/portfolio/static/css/main.0710486e.css.map",
-    "main.7a0ddd48.js.map": "/portfolio/static/js/main.7a0ddd48.js.map"
+    "main.285f2a24.css.map": "/portfolio/static/css/main.285f2a24.css.map",
+    "main.f5ac4371.js.map": "/portfolio/static/js/main.f5ac4371.js.map"
   },
   "entrypoints": [
-    "static/css/main.0710486e.css",
-    "static/js/main.7a0ddd48.js"
+    "static/css/main.285f2a24.css",
+    "static/js/main.f5ac4371.js"
   ]
 }
