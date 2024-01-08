@@ -6,7 +6,7 @@ import WorkExperience from "./components/workExperience";
 import Skillset from "./components/skillset";
 import Projects from "./components/projects";
 import SocialLinks from "./components/socialLinks";
-import Contact from "./components/contact";
+// import Contact from "./components/contact";
 import Footer from "./components/footer";
 import s from "./App.module.css";
 
@@ -55,7 +55,7 @@ function App() {
       <Skillset />
       <Projects />
       <SocialLinks />
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </div>
   );

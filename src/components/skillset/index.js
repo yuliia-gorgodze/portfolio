@@ -62,6 +62,7 @@ const other = [
   "Firebase",
   "Stripe",
   "-",
+  "ReactNative",
   "JavaScript",
   "TypeScript",
   "NodeJs",

@@ -4,6 +4,7 @@ import cidt from "../../images/projects/cidt.png";
 import dao from "../../images/projects/dao.png";
 import omnitech from "../../images/projects/omnitech.png";
 import daowallet from "../../images/projects/daowallet.png";
+import music from "../../images/projects/music.png";
 import { motion, useInView } from "framer-motion";
 import s from "./index.module.css";
 
@@ -30,6 +31,7 @@ const Projects = () => {
       path: "https://daosign.org/",
     },
   ];
+
   const projectsRight = [
     {
       name: "OmniTech",
@@ -42,6 +44,15 @@ const Projects = () => {
       img: daowallet,
       text: "DAO Wallet is WebAssembly Web3 wallet that enables users to interact with decentralized applications (DApps) and blockchain networks seamlessly. It allows users to securely manage their cryptocurrency assets and NFT, including sending and receiving transactions.",
       path: "https://github.com/ConsiderItDone/dao-wallet",
+    },
+  ];
+
+  const t = [
+    {
+      name: "Musiccred (ReactNative)",
+      text: "Artists create their own page (with information on what they do, what they can do, when they are free to perform, how much money they want to receive, and can add their songs or performances through integration with YouTube, Spotify). Also, pages of various concert venues are created and artists are booked from these accounts (integration of payments from Staryp). As a result, an event is created with a certain cost and information that can be seen on the map or in the list",
+      path: "https://apps.apple.com/ua/app/musiccred-book-look-more/id6451335675?l=ru",
+      img: music,
     },
   ];
 
@@ -91,6 +102,30 @@ const Projects = () => {
       <div className={s.rightSide}>
         <ul className={s.project}>
           {projectsRight.map((el) => {
+            return (
+              <li key={el.name} className={s.card}>
+                <a
+                  target="_blank"
+                  href={el.path}
+                  rel="noreferrer"
+                  className={s.cardLink}
+                >
+                  <div className={s.imgContainer}>
+                    <img className={s.imgProject} src={el.img} />
+                  </div>
+                  <div className={s.cardText}>
+                    <h3 className={s.cardTitle}>{el.name}</h3>
+                    <span className={s.subtitle}>{el.text}</span>
+                  </div>
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+      <div className={s.rightSide}>
+        <ul className={s.project}>
+          {t.map((el) => {
             return (
               <li key={el.name} className={s.card}>
                 <a
