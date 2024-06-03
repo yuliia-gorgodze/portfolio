@@ -34,6 +34,15 @@ const jobs = [
     experience: 0.3,
     color: "#609bff",
   },
+  {
+    nameCompany: "Go7",
+    vocation: "Frontend Next.js Developer",
+    description:
+      "Worked with this company in 2024 four months. Above the platform for purchasing plane tickets.",
+    className: s.green,
+    experience: 0.4,
+    color: "#3cc74e",
+  },
 ];
 
 const WorkExperience = () => {

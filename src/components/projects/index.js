@@ -4,7 +4,7 @@ import cidt from "../../images/projects/cidt.png";
 import dao from "../../images/projects/dao.png";
 import omnitech from "../../images/projects/omnitech.png";
 import daowallet from "../../images/projects/daowallet.png";
-import music from "../../images/projects/music.png";
+import go7 from "../../images/projects/go7.png";
 import { motion, useInView } from "framer-motion";
 import s from "./index.module.css";
 
@@ -49,10 +49,10 @@ const Projects = () => {
 
   const t = [
     {
-      name: "Musiccred (ReactNative)",
-      text: "Artists create their own page (with information on what they do, what they can do, when they are free to perform, how much money they want to receive, and can add their songs or performances through integration with YouTube, Spotify). Also, pages of various concert venues are created and artists are booked from these accounts (integration of payments from Staryp). As a result, an event is created with a certain cost and information that can be seen on the map or in the list",
-      path: "https://apps.apple.com/ua/app/musiccred-book-look-more/id6451335675?l=ru",
-      img: music,
+      name: "Go7",
+      text: "Worked on a product for Go7. Above the platform for purchasing plane tickets. The platform is under development, so I am attaching the company’s website.",
+      path: "https://www.go7.io/company/about-go7/",
+      img: go7,
     },
   ];
 

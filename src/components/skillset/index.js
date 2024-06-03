@@ -61,6 +61,7 @@ const other = [
   "MongoDB",
   "Firebase",
   "Stripe",
+  "Postman",
   "-",
   "ReactNative",
   "JavaScript",
@@ -75,6 +76,7 @@ const other = [
   "Lodash",
   "-",
   "Jest",
+  "ApostropheCMS",
 ];
 
 const Skillset = () => {
