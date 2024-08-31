@@ -1,0 +1,46 @@
+.languageSwitcher {
+  position: relative;
+  align-items: center;
+  height: 57px;
+  width: fit-content;
+}
+
+.languageButton {
+  height: 100%;
+  position: absolute;
+  cursor: pointer;
+  color: var(--white);
+  padding: 0;
+  padding-left: 24px;
+}
+
+.langName {
+  opacity: 0.7;
+  display: inline-block;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.langName:is(:hover, :focus) {
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 768px) {
+  .languageSwitcher {
+    z-index: 10;
+    height: 55px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .languageSwitcher {
+    height: 55px;
+    margin-right: 62px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .languageSwitcher {
+    margin-right: 32px;
+  }
+}

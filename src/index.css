@@ -196,3 +196,7 @@ nav {
   align-items: center;
   cursor: pointer;
 }
+
+.flex {
+  display: flex;
+}

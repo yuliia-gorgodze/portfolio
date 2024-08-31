@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { MenuItem } from "./menu-item";
 import s from "./index.module.css";
 import classNames from "classnames";
+import { useTranslation } from "react-i18next";
 
 const variants = {
   open: {
@@ -14,13 +15,9 @@ const variants = {
   },
 };
 
-const links = [
-  { title: "Experience", path: "#experience" },
-  { title: "Projects", path: "#projects" },
-  { title: "Skills", path: "#skills" },
-];
-
 export const NavMob = ({ toggle }) => {
+  const { t } = useTranslation();
+
   const variantsItem = {
     open: {
       y: 0,
@@ -38,6 +35,12 @@ export const NavMob = ({ toggle }) => {
     },
   };
 
+  const links = [
+    { title: t("menu.experience"), path: "#experience" },
+    { title: t("menu.projects"), path: "#projects" },
+    { title: t("menu.skills"), path: "#skills" },
+  ];
+
   return (
     <motion.ul className={s.navListMob} variants={variants}>
       {links.map((i) => (
@@ -50,7 +53,7 @@ export const NavMob = ({ toggle }) => {
         variants={variantsItem}
       >
         <a className={s.navBtnMob} href="#contact" onClick={toggle}>
-          Contact
+          {t("menu.contact")}
         </a>
       </motion.li>
     </motion.ul>

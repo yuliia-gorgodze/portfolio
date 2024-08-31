@@ -6,6 +6,7 @@
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  padding-right: 122px;
 }
 .logo {
   font-weight: 700;
@@ -43,17 +44,54 @@
   line-height: 150%;
   text-transform: capitalize;
 }
+.menuIconButton {
+  outline: none;
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  cursor: pointer;
+  position: absolute;
+  top: 18px;
+  right: 48px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  z-index: 10;
+  background: transparent;
+}
+
+.menuIconButton > svg > path {
+  stroke: var(--white);
+}
+
+@media screen and (max-width: 1040px) {
+  .header {
+    padding-right: 108px;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .navContainer {
     display: none;
   }
   .header {
     height: 55px;
+    padding-right: 78px;
+  }
+  .menuIconButton {
+    right: 48px;
   }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 701px) {
   .mobMenu {
     display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .menuIconButton {
+    right: 20px;
   }
 }

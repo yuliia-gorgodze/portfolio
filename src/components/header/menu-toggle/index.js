@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import * as React from "react";
 import { motion } from "framer-motion";
+import s from "../index.module.css";
 
 const Path = (props) => (
   <motion.path
@@ -13,7 +14,7 @@ const Path = (props) => (
 );
 
 export const MenuToggle = ({ toggle }) => (
-  <button className="button" onClick={toggle}>
+  <button className={s.menuIconButton} onClick={toggle}>
     <svg width="23" height="23" viewBox="0 0 23 23">
       <Path
         variants={{
