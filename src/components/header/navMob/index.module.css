@@ -9,7 +9,7 @@
 }
 
 .navItemMob {
-  font-size: 24px;
+  font-size: var(--fnSizes-sm);
   font-weight: 600;
   margin-bottom: 40px;
 }
@@ -19,7 +19,7 @@
   background-color: var(--primary);
   color: var(--white);
   z-index: 1;
-  font-size: 16px;
+  font-size: var(--fnSizes-xs);
   font-weight: 700;
   line-height: 150%;
   text-transform: capitalize;

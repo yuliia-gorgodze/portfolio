@@ -30,7 +30,7 @@
 .navLink {
   position: relative;
   z-index: 1;
-  font-size: 16px;
+  font-size: var(--fnSizes-xs);
   line-height: 150%;
 }
 
@@ -39,7 +39,7 @@
   background-color: var(--primary);
   color: var(--white);
   z-index: 1;
-  font-size: 16px;
+  font-size: var(--fnSizes-xs);
   font-weight: 700;
   line-height: 150%;
   text-transform: capitalize;

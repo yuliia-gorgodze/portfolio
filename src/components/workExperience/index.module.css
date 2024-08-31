@@ -1,5 +1,6 @@
 .workExperienceContainer {
   padding-bottom: 60px;
+  padding-top: 60px;
   position: relative;
   z-index: 1;
   background-color: var(--black);
@@ -15,7 +16,6 @@
   display: flex;
   margin-top: 40px;
   flex-wrap: wrap;
-  /* gap: 24px; */
   flex-wrap: wrap;
 }
 
@@ -30,10 +30,10 @@
   opacity: 0.5;
 }
 .nameContainer {
-  font-size: 24px;
+  font-size: var(--fnSizes-sm);
 }
 .description {
-  font-size: 16px;
+  font-size: var(--fnSizes-xs);
   line-height: 150%;
   font-weight: 400;
   margin-top: 16px;
@@ -56,10 +56,14 @@
   color: var(--greyText);
 }
 
-.titleSectionNum {
-  margin-right: 20px;
-  font-size: 140px;
-  color: var(--blue);
+.titleSection {
+  color: #ffffff60;
+  font-weight: 400;
+}
+.yearsTitle {
+  color: var(--white);
+  font-weight: 600;
+  font-size: var(--fnSizes-sm);
 }
 
 @media screen and (max-width: 1240px) {
@@ -73,7 +77,7 @@
     font-size: 90px;
   }
   .title {
-    font-size: 36px;
+    font-size: var(--fnSizes-xl);
   }
 }
 
@@ -87,7 +91,7 @@
     flex-direction: column;
   }
   .title {
-    font-size: 32px;
+    font-size: var(--fnSizes-m);
   }
   .workItem {
     width: 100%;

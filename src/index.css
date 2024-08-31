@@ -11,7 +11,30 @@
   --peach: #fff3e4;
   --violet: #fbe4ff;
   --blue: #609bff;
+  --fontFamilyEn: "Sen", sans-serif;
+  --fontFamilyUk: "Roboto Condensed", sans-serif;
+
+  --fnSizes-xs: 16px;
+  --fnSizes-s: 18px;
+  --fnSizes-sm: 24px;
+  --fnSizes-m: 32px;
+  --fnSizes-xl: 36px;
+  --fnSizes-xxl: 42px;
 }
+
+.en-language {
+  font-family: var(--fontFamilyEn);
+}
+.uk-language {
+  --fnSizes-xs: 14px;
+  --fnSizes-s: 16px;
+  --fnSizes-sm: 22px;
+  --fnSizes-m: 30px;
+  --fnSizes-xl: 34px;
+  --fnSizes-xxl: 40px;
+  font-family: var(--fontFamilyUk);
+}
+
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -21,29 +44,27 @@
   padding-left: 72px;
   padding-right: 72px;
 }
+
 body {
   margin: 0;
-  font-family: "Sen", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 18px;
+  font-size: var(--fnSizes-s);
   font-style: normal;
   font-weight: 400;
   color: var(--white);
 }
+
 html {
   -webkit-tap-highlight-color: var(--black);
 }
 
-code {
-  font-family: "Sen", sans-serif;
-}
 button {
   border: none;
   background-color: unset;
   cursor: pointer;
   display: block;
-  font-size: 18px;
+  font-size: var(--fnSizes-s);
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
@@ -96,18 +117,18 @@ h2 {
   font-size: 55px;
 }
 h3 {
-  font-size: 24px;
+  font-size: var(--fnSizes-sm);
 }
 h4 {
-  font-size: 18px;
+  font-size: var(--fnSizes-s);
 }
 h5 {
-  font-size: 16px;
+  font-size: var(--fnSizes-xs);
 }
 
 /* Section */
 .titleSection {
-  font-size: 16px;
+  font-size: var(--fnSizes-xs);
   font-style: normal;
   font-weight: 700;
   line-height: 150%;

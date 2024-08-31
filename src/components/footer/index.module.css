@@ -41,7 +41,7 @@
   padding-bottom: 0;
 }
 .navFooter > ul > li > a {
-  font-size: 18px;
+  font-size: var(--fnSizes-s);
 }
 .infoContainer {
   max-width: 1440px;

@@ -7,9 +7,13 @@
     "contact": "Contact"
   },
   "hero": {
-    "title": "I'm Yuliia Gorgodze. A frontend developer",
+    "name": "I'm Yuliia Gorgodze.",
+    "vocation": " A frontend developer",
     "basedInUkraine": "based in Ukraine.",
     "textAboutMe": "I'm probably the most passionate programmer you'll ever work with. If you have a great project that requires amazing skills, I'm with you."
+  },
+  "experience": {
+    "deu": "Developed 20+ web applications using React and Next.js, improved user experience and performance by using tools like SWR for data retrieval and Redux for state management, and received positive feedback from customers. I worked with DEU for almost three years, from June 2020 to May 2023."
   },
   "name": "Yuliia Gorgodze"
 }

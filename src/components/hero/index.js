@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
+
 import s from "./index.module.css";
 
 const Hero = () => {
   const [loading, setLoading] = useState(true);
+  const { t } = useTranslation();
 
   useEffect(() => {
     setTimeout(() => {
@@ -46,12 +49,10 @@ const Hero = () => {
         initial="hidden"
         exit="hidden"
       >
-        <h1 className={s.name}>{`I'm Yuliia Gorgodze.`}</h1>
-        <span className={s.name}>A frontend developer</span>
-        <span className={s.location}>based in Ukraine.</span>
-        <span className={s.info}>
-          {`I'm probably the most passionate programmer you'll ever work with. If you have a great project that requires amazing skills, I'm with you.`}
-        </span>
+        <h1 className={s.name}>{t("hero.name")}</h1>
+        <span className={s.vocation}>{t("hero.vocation")}</span>
+        <span className={s.location}>{t("hero.basedInUkraine")}</span>
+        <span className={s.info}>{t("hero.textAboutMe")}</span>
       </motion.div>
       <motion.div
         transition={{ type: "linear", duration: 1.5 }}
@@ -61,12 +62,10 @@ const Hero = () => {
         initial="hidden"
         exit="hidden"
       >
-        <h1 className={s.name}>{`I'm Yuliia Gorgodze.`}</h1>
-        <span className={s.name}>A frontend developer</span>
-        <span className={s.location}>based in Ukraine.</span>
-        <span className={s.info}>
-          {`I'm probably the most passionate programmer you'll ever work with. If you have a great project that requires amazing skills, I'm with you.`}
-        </span>
+        <h1 className={s.name}>{t("hero.name")}</h1>
+        <span className={s.vocation}>{t("hero.vocation")}</span>
+        <span className={s.location}>{t("hero.basedInUkraine")}</span>
+        <span className={s.info}>{t("hero.textAboutMe")}</span>
       </motion.div>
     </div>
   );
