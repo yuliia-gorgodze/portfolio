@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
+import classNames from "classnames";
+
 import Header from "./components/header";
 import Hero from "./components/hero";
 import WorkExperience from "./components/workExperience";
@@ -23,6 +26,7 @@ const variantsGrey = {
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const { i18n } = useTranslation();
 
   useEffect(() => {
     setTimeout(() => {
@@ -31,7 +35,7 @@ function App() {
   }, []);
 
   return (
-    <div className={s.mainContainer}>
+    <div className={classNames(s.mainContainer, `${i18n.language}-language`)}>
       <div className={s.bgHero}>
         <motion.div
           transition={{ type: "linear", duration: 1, delay: 2 }}

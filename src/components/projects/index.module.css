@@ -31,14 +31,14 @@
 }
 .title {
   margin-bottom: 24px;
-  font-size: 36px;
+  font-size: var(--fnSizes-xl);
   font-weight: 700;
   max-width: 780px;
   margin-bottom: 81px;
   display: block;
 }
 .subtitle {
-  font-size: 18px;
+  font-size: var(--fnSizes-s);
   line-height: 150%;
   color: var(--greyText);
 }
@@ -55,7 +55,7 @@
 }
 
 .cardTitle {
-  font-size: 24px;
+  font-size: var(--fnSizes-sm);
   font-weight: 700;
   margin-bottom: 18px;
 }
@@ -110,6 +110,6 @@
     height: auto;
   }
   .title {
-    font-size: 32px;
+    font-size: var(--fnSizes-m);
   }
 }

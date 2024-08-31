@@ -24,7 +24,7 @@
   display: inline-block;
 }
 .info {
-  font-size: 18px;
+  font-size: var(--fnSizes-s);
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
@@ -54,9 +54,17 @@
   transform: translateX(-55px);
   z-index: 1;
 }
+
 .infoContainerMob {
   display: none;
 }
+
+.vocation {
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 1240px) {
   .name {
     font-size: 50px;
@@ -71,7 +79,7 @@
 
 @media screen and (max-width: 1040px) {
   .name {
-    font-size: 36px;
+    font-size: var(--fnSizes-xl);
   }
   .location {
     font-size: 48px;
@@ -94,7 +102,7 @@
   }
   .name,
   .location {
-    font-size: 32px;
+    font-size: var(--fnSizes-m);
   }
 }
 
