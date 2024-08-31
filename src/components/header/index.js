@@ -1,11 +1,13 @@
-/* eslint-disable react/prop-types */
 import React, { useRef } from "react";
 import classNames from "classnames";
 import { motion, useCycle } from "framer-motion";
-import Nav from "./nav";
+import { useTranslation } from "react-i18next";
 import { useDimensions } from "../hooks/use-dimensions";
+
+import Nav from "./nav";
 import { NavMob } from "./navMob";
 import { MenuToggle } from "./menu-toggle";
+import LanguageSwitcher from "./languageSwitcher";
 
 import s from "./index.module.css";
 
@@ -13,11 +15,10 @@ const Header = ({ loading }) => {
   const [isOpen, toggleOpen] = useCycle(false, true);
   const containerRef = useRef(null);
   const { height } = useDimensions(containerRef);
+
+  const { t } = useTranslation();
+
   const variants = {
-    hidden: { x: -300, opacity: 0 },
-    enter: { x: 0, opacity: 1 },
-  };
-  const variantsNav = {
     hidden: { x: -300, opacity: 0 },
     enter: { x: 0, opacity: 1 },
   };
@@ -52,32 +53,36 @@ const Header = ({ loading }) => {
         initial="hidden"
         exit="hidden"
       >
-        Yuliia.G
+        {t("shortName")}
       </motion.span>
-      <motion.div
-        transition={{ type: "linear", duration: 1.1, delay: 2 }}
-        animate={!loading ? "enter" : "hidden"}
-        className={s.navContainer}
-        variants={variantsNav}
-        initial="hidden"
-        exit="hidden"
-      >
-        <Nav loading={loading} />
-        <a href="#contact" className={s.btnContact}>
-          Contact
-        </a>
-      </motion.div>
-      <motion.nav
-        animate={isOpen ? "open" : "closed"}
-        className={s.mobMenu}
-        ref={containerRef}
-        initial={false}
-        custom={height}
-      >
-        <motion.div className="background" variants={sidebar} />
-        <NavMob toggle={toggleOpen} />
-        <MenuToggle toggle={() => toggleOpen()} />
-      </motion.nav>
+      <div className="flex">
+        <motion.div
+          transition={{ type: "linear", duration: 1.1, delay: 2 }}
+          animate={!loading ? "enter" : "hidden"}
+          className={s.navContainer}
+          variants={variants}
+          initial="hidden"
+          exit="hidden"
+        >
+          <Nav loading={loading} />
+          <a href="#contact" className={s.btnContact}>
+            {t("menu.contact")}
+          </a>
+        </motion.div>
+
+        <motion.nav
+          animate={isOpen ? "open" : "closed"}
+          className={s.mobMenu}
+          ref={containerRef}
+          initial={false}
+          custom={height}
+        >
+          <motion.div className="background" variants={sidebar} />
+          <NavMob toggle={toggleOpen} />
+          <MenuToggle toggle={() => toggleOpen()} />
+        </motion.nav>
+        <LanguageSwitcher isDesktop />
+      </div>
     </header>
   );
 };

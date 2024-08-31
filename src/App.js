@@ -8,6 +8,7 @@ import Projects from "./components/projects";
 import SocialLinks from "./components/socialLinks";
 import Contact from "./components/contact";
 import Footer from "./components/footer";
+
 import s from "./App.module.css";
 
 const variants = {

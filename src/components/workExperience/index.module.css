@@ -1,5 +1,4 @@
 .workExperienceContainer {
-  padding-top: 120px;
   padding-bottom: 60px;
   position: relative;
   z-index: 1;
@@ -15,13 +14,15 @@
 .workList {
   display: flex;
   margin-top: 40px;
-  gap: 24px;
+  flex-wrap: wrap;
+  /* gap: 24px; */
+  flex-wrap: wrap;
 }
+
 .workItem {
-  padding-right: 10px;
-  padding-left: 5px;
-  width: 33.3%;
+  width: calc(100% / 2 - 20px);
 }
+
 .num {
   font-size: 117px;
   font-weight: 400;
@@ -54,6 +55,13 @@
 .years {
   color: var(--greyText);
 }
+
+.titleSectionNum {
+  margin-right: 20px;
+  font-size: 140px;
+  color: var(--blue);
+}
+
 @media screen and (max-width: 1240px) {
   .workList {
     gap: 18px;
