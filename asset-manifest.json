@@ -1,25 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.e9db5191.css",
-    "main.js": "/portfolio/static/js/main.20ba0f31.js",
+    "main.css": "/portfolio/static/css/main.f75fe78a.css",
+    "main.js": "/portfolio/static/js/main.9f4f1ea9.js",
     "static/media/hero.JPG": "/portfolio/static/media/hero.926a91f1eea59138e65c.JPG",
-    "static/media/go7.png": "/portfolio/static/media/go7.72cae90936705072e4e7.png",
     "static/media/me.png": "/portfolio/static/media/me.77b9765a9bac08b6bb5d.png",
-    "static/media/dao.png": "/portfolio/static/media/dao.0bfd5d38ee2059db7014.png",
-    "static/media/omnitech.png": "/portfolio/static/media/omnitech.3db2d964b4e04038a038.png",
-    "static/media/cidt.png": "/portfolio/static/media/cidt.32d3564225d9290eb122.png",
-    "static/media/daowallet.png": "/portfolio/static/media/daowallet.fe161c50dd4f5bc34be2.png",
     "static/media/node.svg": "/portfolio/static/media/node.474cb7be2fa5888d465d.svg",
     "static/media/reactIcon.svg": "/portfolio/static/media/reactIcon.d97937e29329a4143c5f.svg",
     "static/media/next.svg": "/portfolio/static/media/next.f7433c6dc53b916803b5.svg",
     "index.html": "/portfolio/index.html",
     "static/media/js.svg": "/portfolio/static/media/js.29777f5c5bea08cdfa22.svg",
     "static/media/star.svg": "/portfolio/static/media/star.79c410aa30e8d725890e2c3e4c37dac4.svg",
-    "main.e9db5191.css.map": "/portfolio/static/css/main.e9db5191.css.map",
-    "main.20ba0f31.js.map": "/portfolio/static/js/main.20ba0f31.js.map"
+    "main.f75fe78a.css.map": "/portfolio/static/css/main.f75fe78a.css.map",
+    "main.9f4f1ea9.js.map": "/portfolio/static/js/main.9f4f1ea9.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9db5191.css",
-    "static/js/main.20ba0f31.js"
+    "static/css/main.f75fe78a.css",
+    "static/js/main.9f4f1ea9.js"
   ]
 }
