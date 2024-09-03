@@ -61,13 +61,13 @@ const Footer = () => {
               Linkidin
             </a>
             <a
-              href="https://github.com/yuliiagorgozka"
+              href="https://github.com/yuliia-gorgodze"
               className={s.link}
               rel="noreferrer"
               target="_blank"
               ref={ref}
             >
-              Git
+              Github
             </a>
           </div>
           <Nav />

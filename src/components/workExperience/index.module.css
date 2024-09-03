@@ -12,13 +12,28 @@
   font-weight: 700;
   max-width: 780px;
 }
-.workList {
+.workList,
+.workListOther {
+  gap: 20px;
   display: flex;
   margin-top: 40px;
   flex-wrap: wrap;
   flex-wrap: wrap;
 }
-
+.workList {
+  margin-bottom: 40px;
+}
+.workListOther {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.otherTitle {
+  margin-top: 40px;
+}
+.otherDescription {
+  margin-top: 10px;
+  display: inline-block;
+}
 .workItem {
   width: calc(100% / 2 - 20px);
 }
@@ -33,15 +48,34 @@
   font-size: var(--fnSizes-sm);
 }
 .description {
-  font-size: var(--fnSizes-xs);
   line-height: 150%;
   font-weight: 400;
   margin-top: 16px;
+  margin-bottom: 20px;
   display: inline-block;
-  color: var(--greyText);
+  color: var(--lightGrey);
+}
+.description > li {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  position: relative;
+  opacity: 0.9;
+}
+.description > li::before {
+  content: "-";
+  position: absolute;
+  font-size: 30px;
+  color: inherit;
+  left: 2px;
 }
 .vocation {
+  display: inline-block;
   transition: color 0.3s;
+  color: var(--greyText);
+  font-size: 16px;
 }
 .green {
   color: var(--green);
@@ -61,11 +95,19 @@
   font-weight: 400;
 }
 .yearsTitle {
+  display: inline-block;
+  margin: 0 5px;
   color: var(--white);
   font-weight: 600;
   font-size: var(--fnSizes-sm);
 }
 
+.professionalSummary {
+  padding-top: 50px;
+}
+.summaryDescriptionTitle {
+  font-size: 32px;
+}
 @media screen and (max-width: 1240px) {
   .workList {
     gap: 18px;

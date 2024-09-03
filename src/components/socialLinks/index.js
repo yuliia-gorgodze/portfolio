@@ -1,10 +1,12 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import s from "./index.module.css";
+import { useTranslation } from "react-i18next";
 
 const SocialLinks = () => {
   const ref = useRef(null);
   const isInView = useInView(ref);
+  const { t } = useTranslation();
 
   const variants = {
     hidden: { opacity: 0, x: -100 },
@@ -26,11 +28,9 @@ const SocialLinks = () => {
               ref={ref}
               href="/"
             >
-              Social Links
+              {t("socialLinks.title")}
             </motion.h2>
-            <span className={s.text}>
-              We save your life and work history online.
-            </span>
+            <span className={s.text}>{t("socialLinks.description")}</span>
           </div>
           <div className={s.links}>
             <a
@@ -52,11 +52,11 @@ const SocialLinks = () => {
             </a>
             <a
               className={s.link}
-              href="https://github.com/yuliiagorgozka"
+              href="https://github.com/yuliia-gorgodze"
               target="_blank"
               rel="noreferrer"
             >
-              Git
+              Github
             </a>
           </div>
         </div>

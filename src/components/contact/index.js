@@ -4,6 +4,7 @@ import { motion, useInView } from "framer-motion";
 import sendToTg from "../../api/index";
 import { ThreeDots } from "react-loader-spinner";
 import s from "./index.module.css";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
   const [loading, setLoading] = useState(false);
@@ -11,6 +12,7 @@ const Contact = () => {
   const [errorsTg, setErrorsTg] = useState(false);
   const ref = useRef(null);
   const isInView = useInView(ref);
+  const { t } = useTranslation();
 
   const variantsTitle = {
     hidden: { opacity: 0, x: -100 },
@@ -110,43 +112,40 @@ const Contact = () => {
           exit="hidden"
           ref={ref}
         >
-          Let’s talk business
+          {t("contact.title")}
         </motion.h2>
-        <span className={s.subtitle}>
-          Now that you know a lot about me, let me know if you are interested to
-          work with me.
-        </span>
+        <span className={s.subtitle}>{t("contact.subTitle")}</span>
       </div>
       <div className={s.rightSide}>
         <form className={s.form} onSubmit={onSubmit}>
-          <span>Name *</span>
+          <span> {t("contact.form.name")}</span>
           <div className={s.field}>
             <input
               value={values?.name}
               onChange={(e) => onChange("name", e?.target?.value)}
             />
-            {errorMessage("Please enter name", errors?.name)}
+            {errorMessage(t("contact.errors.nameRequired"), errors?.name)}
           </div>
 
-          <span className={s.label}>Email *</span>
+          <span className={s.label}> {t("contact.form.email")}</span>
           <div className={s.field}>
             <input
               value={values?.email}
               onChange={(e) => onChange("email", e?.target?.value)}
             />
-            {errorMessage("Please enter valid email", errors?.email)}
+            {errorMessage(t("contact.errors.emailNotValid"), errors?.email)}
           </div>
 
-          <span className={s.label}>Message *</span>
+          <span className={s.label}> {t("contact.form.message")}</span>
           <div className={s.field}>
             <input
               value={values?.message}
               onChange={(e) => onChange("message", e?.target?.value)}
             />
-            {errorMessage("Please enter message", errors?.message)}
+            {errorMessage(t("contact.errors.messageRequired"), errors?.message)}
           </div>
           <button type="button" onClick={onSubmit} className={s.btnSubmit}>
-            LET’S GET STARTED
+            {t("contact.form.btnText")}
           </button>
         </form>
         {loading && (
@@ -165,28 +164,25 @@ const Contact = () => {
         )}
         {success && (
           <div className={s.preloader}>
-            <span className={s.successText}>I will contact you shortly</span>
+            <span className={s.successText}>{t("contact.success")}</span>
             <button
               type="button"
               onClick={() => setSuccess(false)}
               className={s.btnResend}
             >
-              resend
+              {t("contact.resend")}
             </button>
           </div>
         )}
         {errorsTg && (
           <div className={s.preloader}>
-            <span className={s.successText}>
-              Ops... Something went wrong. Contact me in a way convenient for
-              you or try again.
-            </span>
+            <span className={s.successText}>{t("contact.error")}</span>
             <button
               type="button"
               onClick={() => setErrorsTg(false)}
               className={s.btnResend}
             >
-              resend
+              {t("contact.resend")}
             </button>
           </div>
         )}

@@ -57,8 +57,8 @@ function App() {
       <Header loading={loading} />
       <Hero />
       <WorkExperience loading={loading} />
-      <Skillset />
       <Projects />
+      <Skillset />
       <SocialLinks />
       <Contact />
       <Footer />

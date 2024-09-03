@@ -7,13 +7,179 @@
     "contact": "Contact"
   },
   "hero": {
-    "name": "I'm Yuliia Gorgodze.",
-    "vocation": " A frontend developer",
-    "basedInUkraine": "based in Ukraine.",
+    "name": "I'm Yuliia Gorgodze",
+    "vocation": "A frontend developer",
+    "basedInUkraine": "based in Ukraine",
     "textAboutMe": "I'm probably the most passionate programmer you'll ever work with. If you have a great project that requires amazing skills, I'm with you."
   },
+  "certifications": {
+    "title": "Certifications",
+    "value": "Full Stack developer  - [GoIt Academy], [2019]"
+  },
   "experience": {
-    "deu": "Developed 20+ web applications using React and Next.js, improved user experience and performance by using tools like SWR for data retrieval and Redux for state management, and received positive feedback from customers. I worked with DEU for almost three years, from June 2020 to May 2023."
+    "title": "Professional Experience",
+    "titleOther": "Additional Experience",
+    "commercialExperience": "of commercial experience",
+    "additionalExperience": [
+      {
+        "title": "Mentorship and Tutoring:",
+        "description": "Spent over two years tutoring aspiring developers, many of whom now successfully work as part of established teams. This role involved guiding learners through their early coding challenges, particularly in React and JavaScript, fostering a community of skilled developers."
+      },
+      {
+        "title": "Game Development:",
+        "description": "Worked on several small projects as a game developer, exploring creative approaches to coding and user interaction."
+      }
+    ],
+    "deu": {
+      "fromTo": "June 2020 – May 2023 (3.7 years)",
+      "description": [
+        "Developed and maintained over 20 web applications using React and Next.js, consistently enhancing user experiences and application performance.",
+        "Collaborated with cross-functional teams to design and implement user-friendly interfaces, receiving consistent positive feedback from clients and end-users."
+      ]
+    },
+    "erbology": {
+      "fromTo": "February 2023 – May 2023 (0.4 years)",
+      "description": [
+        "Led the migration of a WordPress-based online store to a high-performance React application, increasing site speed.",
+        "Developed a custom admin panel that streamlined content management, reducing update times.",
+        "Worked closely with the client to ensure that the new application met their specific needs and enhanced user experience."
+      ]
+    },
+    "bozhenko": {
+      "fromTo": "July 2023 – September 2023 (0.3 years)",
+      "description": [
+        "Completed two major projects: developed an online auto parts store and a corporate website using Next.js.",
+        "Implemented SWR for efficient data fetching and real-time updates, optimizing performance and reducing load times.",
+        "Focused on optimizing site performance and ensuring responsive design to improve user experience."
+      ]
+    },
+    "go7": {
+      "fromTo": "2024 (0.4 years)",
+      "description": [
+        "Architected the front-end of a flight booking platform using Next.js, focusing on scalability and performance.",
+        "Collaborated with backend developers to integrate APIs, ensuring smooth data flow and improved user experience."
+      ]
+    },
+    "professional": "Professional",
+    "summary": "Summary",
+    "summaryDescription": " Innovative and dedicated front-end developer with 4+ years of experience building dynamic, user-centric web applications using React, Next.js and TypeScript. Participated in the development of 30+ projects in various industries. Passionate about developing innovative solutions and tracking the latest industry trends."
+  },
+  "skillset": {
+    "title": "Skillset",
+    "description": "I am confident in 3 skills out of 4 skills on this list, which allows me to cope with any front-end tasks assigned, and a basic knowledge of Node.js allows me to better understand the communication between the front-end and back-end.",
+    "skills": [
+      {
+        "title": "Frontend Technologies:",
+        "value": "React, Next.js, JavaScript, TypeScript, HTML5, CSS/SCSS"
+      },
+      {
+        "title": "Frameworks & Libraries:",
+        "value": "Tailwind CSS, Bootstrap, MaterialUI, Antd, Anijs, ThreeJs, Framer Motion, StoryBook"
+      },
+      {
+        "title": "Tools & Platforms:",
+        "value": "Figma, Slack, Jira, Trello, Git, Firebase, MongoDB, Postman"
+      },
+      {
+        "title": "State Management & Data Handling:",
+        "value": "Redux, SWR (Bozhenko project), GraphQL, ReactRouter, ReactHookForm, Web3"
+      },
+      {
+        "title": "Testing & Optimization:",
+        "value": "Jest, Lighthouse, Webpack, Babel"
+      },
+      {
+        "title": "Other:",
+        "value": "Node.js (Basic), i18next, moment, Lodash, Stripe integration"
+      }
+    ],
+
+    "mainSkills": [
+      {
+        "title": "Node.js",
+        "value": "There is basic knowledge. I personally developed a commercial project, an application for monitoring production processes using React and Node.js."
+      },
+      {
+        "title": "Next.js",
+        "value": "Confident knowledge of Next.js, last year 10+ projects implemented with it."
+      },
+      {
+        "title": "JS/TS",
+        "value": "Three years of experience. I also have experience working on projects with VanillaJS."
+      },
+      {
+        "title": "React",
+        "value": "Strong knowledge of React, more than 25 completed projects."
+      }
+    ],
+    "certifications": {
+      "title": "Certifications",
+      "value": "Full Stack developer  - [GoIt Academy], [2019]"
+    }
+  },
+  "socialLinks": {
+    "title": "Social Links",
+    "description": "We save your life and work history online"
+  },
+  "general": {
+    "moreThen": "more than",
+    "years": " years",
+    "projects": "Projects",
+    "note": "Note: A VPN is required to access the site.",
+    "ps": " Ps.  and many, many others projects, inaccessible. "
+  },
+
+  "projects": [
+    {
+      "title": "IoT Smart Home",
+      "description": "Developed a React application for a smart home system, integrating with devices installed around the house. Utilized Firebase for real-time push notifications to alert users of device status changes, enhancing home security and automation."
+    },
+    {
+      "title": "Continent",
+      "description": "Developed a marketing page for a trading market using Vanilla JavaScript. Integrated APIs to fetch real-time data from market exchanges, providing users with up-to-date information on trading options."
+    },
+    {
+      "title": "Gardens",
+      "description": "Created a responsive website for a landscaping company based in England using React. Focused on delivering a user-friendly interface to showcase the company’s services effectively."
+    },
+    {
+      "title": "Axelar Wrapper",
+      "description": "Contributed to the development of a secure integration wrapper for the Axelar Network using AssemblyScript. The wrapper supports cross-chain token transfers."
+    },
+    {
+      "title": "DAO Wallet",
+      "description": "Participated in the development of WebAssembly Web3 wallet, which allows users to interact with decentralized applications (DApps) and allows users to securely manage their cryptocurrency assets and NFT, including sending and receiving transactions."
+    },
+    {
+      "title": "OmniTech",
+      "description": "Took part in the development of the application a platform to store, index, and provide custom access to cross-chain data. Focused on user interface design."
+    },
+    {
+      "title": "Consider It Done Technologies",
+      "description": "Designed and implemented a marketing page, utilizing modern UI/UX principles to boost user engagement."
+    },
+    {
+      "title": "DaoSign",
+      "description": "Participated in the development of a decentralized platform for agreements featuring cryptographic proofs-of-signature, specifically designed for DAOs. Over a period of two years, I contributed to various components, including both the main application and the marketing page. The DAOsign application was built using Next.js and React for the frontend, which facilitated seamless user interactions. It incorporated GraphQL for efficient data handling and urql as a client, providing a robust API communication framework. Key features included the use of Framer Motion for animations and IPFS for secure, decentralized file storage. Security and user authentication were enhanced with Metamask and WalletConnect integrations. The marketing page, which aimed to boost user engagement, was also built using React and Next.js, focusing on modern UI/UX principles."
+    }
+  ],
+  "contact": {
+    "title": "Let’s talk business",
+    "subTitle": "Now that you know a lot about me, let me know if you are interested to work with me.",
+    "form": {
+      "name": "Name *",
+      "email": "Email *",
+      "message": "Message *",
+      "btnText": "LET’S GET STARTED"
+    },
+    "errors": {
+      "nameRequired": "Please enter name",
+      "emailNotValid": "Please enter valid email",
+      "messageRequired": "Please enter message"
+    },
+    "success": "I will contact you shortly",
+    "resend": "resend",
+    "error": "  Ops... Something went wrong. Contact me in a way convenient for you or try again."
   },
   "name": "Yuliia Gorgodze"
 }

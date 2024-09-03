@@ -15,14 +15,37 @@
 .otherContainer {
   max-width: 1440px;
   margin: 0 auto;
+  background-color: #181823;
+  padding-top: 30px;
+  position: relative;
+}
+.otherContainer::before {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 5px;
+  position: absolute;
+  background-color: var(--pink);
+  bottom: -2.5px;
+  left: 0;
+}
+.otherContainer::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 2px;
+  position: absolute;
+  background-color: var(--pink);
+  top: -2.5px;
+  right: 0;
 }
 .otherList {
-  display: flex;
-  padding-bottom: 120px;
-  justify-content: space-between;
-  gap: 24px;
+  padding-bottom: 50px;
   flex-wrap: wrap;
   justify-content: center;
+}
+.otherList > li {
+  margin-bottom: 20px;
 }
 .titleContainer {
   display: flex;
@@ -74,9 +97,10 @@
   display: inline-block;
 }
 .descriptionItem {
-  font-size: var(--fnSizes-xs);
+  font-size: var(--fnSizes-s);
   line-height: 150%;
   max-width: 368px;
+  font-weight: 400;
   display: inline-block;
 }
 .scoreContainer {

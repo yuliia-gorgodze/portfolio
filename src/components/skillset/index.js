@@ -2,29 +2,63 @@ import React, { useRef } from "react";
 import classNames from "classnames";
 import { ReactComponent as Start } from "../../images/icons/star.svg";
 import { motion, useInView } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
-import { other, skills, stars } from "./constants";
+import { stars } from "./constants";
 
 import s from "./index.module.css";
 import getId from "../../helpers";
 
 const Skillset = () => {
+  const { t } = useTranslation();
   const ref = useRef(null);
+  const refCertifications = useRef(null);
   const isInView = useInView(ref);
+  const isCertificationsInView = useInView(refCertifications);
+  const skillsOther = t("skillset.skills", { returnObjects: true });
+  const mainSkills = t("skillset.mainSkills", { returnObjects: true });
+  console.log(mainSkills);
 
   const variants = {
     hidden: { opacity: 0, x: -50 },
     enter: { opacity: 1, x: 0 },
   };
 
+  const skills = [
+    {
+      icon: s.fourth,
+      score: 3,
+      id: getId(),
+    },
+    {
+      icon: s.third,
+      score: 5,
+      id: getId(),
+    },
+
+    {
+      icon: s.first,
+      score: 5,
+      id: getId(),
+    },
+    {
+      icon: s.second,
+      score: 5,
+      id: getId(),
+    },
+  ];
+
   return (
     <>
       <div className={classNames(s.otherContainer, "container")}>
         <ul className={s.otherList}>
-          {other?.map((el) => {
+          {skillsOther.map((skill) => {
+            console.log(skill);
+
             return (
               <li key={getId()}>
-                <span className={s.description}>{el}</span>
+                <h3>{skill.title}</h3>
+                <span className={s.description}>{skill.value}</span>
               </li>
             );
           })}
@@ -41,35 +75,55 @@ const Skillset = () => {
             exit="hidden"
             ref={ref}
           >
-            Skillset
+            {t("skillset.title")}
           </motion.h2>
-          <span className={s.description}>
-            I am confident in 3 skills out of 4 skills on this list, which
-            allows me to cope with any front-end tasks assigned, and a basic
-            knowledge of Node.js allows me to better understand the
-            communication between the front-end and back-end.
-          </span>
+          <span className={s.description}>{t("skillset.description")}</span>
         </div>
         <ul className={s.list}>
-          {skills.map((el) => {
+          {mainSkills.map((skill, i) => {
             return (
-              <li className={s.item} key={el.id}>
+              <li className={s.item} key={skills[i].id}>
                 <div className={s.nameContainer}>
-                  <div className={classNames(s.icon, el.icon)} />
-                  <span className={s.name}>{el.name} </span>
+                  <div className={classNames(s.icon, skills[i].icon)} />
+                  <span className={s[skills[i].icon]}>{skill.title} </span>
                   <div>
                     {stars?.map((num) => {
-                      if (num <= el.score) {
-                        return <Start key={el.name + num} />;
+                      if (num <= i.score) {
+                        return <Start key={skill.title + num} />;
                       }
                     })}
                   </div>
                 </div>
-                <span className={s.descriptionItem}>{el.description}</span>
+                <span className={s.descriptionItem}>{skill.value}</span>
               </li>
             );
           })}
         </ul>
+      </div>
+      <div
+        style={{
+          paddingBottom: "40px",
+          maxWidth: "1440px",
+          marginLeft: "auto",
+          marginRight: "auto",
+        }}
+        className="container"
+      >
+        <motion.h2
+          transition={{ type: "linear", duration: 1 }}
+          animate={isCertificationsInView ? "enter" : "hidden"}
+          style={{ color: "var(--white)" }}
+          className={s.description}
+          ref={refCertifications}
+          variants={variants}
+          initial="hidden"
+          exit="hidden"
+        >
+          {t("certifications.title")}
+        </motion.h2>
+        <span style={{ color: "var(--greyText)" }} className={s.description}>
+          {t("certifications.value")}
+        </span>
       </div>
     </>
   );
