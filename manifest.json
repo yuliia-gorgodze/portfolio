@@ -1,6 +1,6 @@
 {
-  "short_name": "Yuliia Volodina",
-  "name": "Yuliia Volodina's portfolio. Skillset, projects, work experience.",
+  "short_name": "Yuliia.V",
+  "name": "Yuliia Volodina — Senior Frontend / Full-Stack JavaScript Developer",
   "icons": [
     {
       "src": "favicon.ico",
@@ -30,6 +30,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#e8eef4",
+  "background_color": "#e8eef4"
 }
