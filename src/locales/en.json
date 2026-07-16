@@ -1,0 +1,224 @@
+{
+  "shortName": "Yuliia.V",
+  "menu": {
+    "work": "Work",
+    "craft": "Craft",
+    "ai": "AI",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "hero": {
+    "name": "I'm Yuliia Volodina",
+    "vocation": "Senior Frontend / Full-Stack JavaScript Developer",
+    "location": "based in Ukraine.",
+    "lead": "Versatile Developer with 5+ years of commercial experience building SaaS platforms, AI tools, collaborative editors, real-time applications, Telegram mini-apps, Web3 integrations and high-performance interfaces using React, Next.js, TypeScript, Deno and Node.js.",
+    "ctaPrimary": "Selected work",
+    "ctaSecondary": "Get in touch",
+    "alt": "Portrait of Yuliia Volodina in a red blazer"
+  },
+  "work": {
+    "eyebrow": "Selected work",
+    "title": "Four cases that show how I think in product UI",
+    "subtitle": "Explore problem → system → outcome.",
+    "explore": "Explore",
+    "problem": "Problem",
+    "system": "System",
+    "outcome": "Outcome",
+    "stack": "Stack",
+    "featured": [
+      {
+        "id": "workforce",
+        "name": "Workforce Platform",
+        "domain": "Enterprise HR",
+        "summary": "Shift planning, attendance, leave, calendars, and reporting for daily operational teams.",
+        "problem": "HR ops needed one interface for many roles: planners, managers, and staff — with calendars, tables, and forms that stay reliable under heavy daily use.",
+        "system": "Built complex frontend modules on Next.js App Router: FullCalendar + drag-and-drop planning, role-based UI, Redux Toolkit + TanStack Query, Ant Design, i18n, Storybook, and Jest coverage.",
+        "outcome": "A maintainable enterprise frontend for high-complexity workforce workflows — reusable UI, clear state boundaries, and documented components.",
+        "stack": ["Next.js", "React", "TypeScript", "Ant Design", "Redux Toolkit", "TanStack Query", "Storybook"]
+      },
+      {
+        "id": "booking",
+        "name": "Flight Booking Platform",
+        "domain": "Aviation · Enterprise",
+        "summary": "Enterprise flight booking: search, passengers, payment, and booking management.",
+        "problem": "Multi-step booking had to stay consistent across search → passengers → payment inside a large Nx monorepo and shared design system.",
+        "system": "Shipped React UI for critical booking flows with Radix, Redux plugins, Storybook, and Module Federation pieces in the client SDK architecture.",
+        "outcome": "Reusable booking patterns and design-system components that keep business-critical journeys coherent across the monorepo.",
+        "stack": ["Nx", "React", "TypeScript", "Radix UI", "Redux", "Storybook", "Module Federation"]
+      },
+      {
+        "id": "commerce",
+        "name": "Auto Parts Commerce",
+        "domain": "E-commerce",
+        "summary": "Storefront plus admin: catalogue, cart, checkout, orders, and content.",
+        "problem": "Both a customer storefront and an operational admin — filters by vehicle make/model, payments, and content workflows in one monorepo.",
+        "system": "Delivered Next.js storefront and MUI admin in an Nx setup with NestJS API, Prisma/PostgreSQL, payments, OAuth, and order/content management flows.",
+        "outcome": "End-to-end product surface: purchase path and admin tooling as one coherent system.",
+        "stack": ["Next.js", "Nx", "NestJS", "TypeScript", "MUI", "Prisma", "PostgreSQL"]
+      },
+      {
+        "id": "agreements",
+        "name": "Agreements Platform",
+        "domain": "Web3 · SaaS UI",
+        "summary": "Multi-step agreement wizard with wallet auth, GraphQL data, and IPFS storage.",
+        "problem": "Creating and signing agreements is a long, fragile flow — wallets, validation, imports, and previews had to feel trustworthy, not noisy.",
+        "system": "Owned the large frontend: multi-step wizard, forms/validation, GraphQL client + codegen, wallet connectors, IPFS, plus the marketing site with motion.",
+        "outcome": "A product-grade wizard UX where blockchain is context — the real win is clarity through complex business steps.",
+        "stack": ["Next.js", "React", "TypeScript", "GraphQL", "IPFS", "Framer Motion"]
+      }
+    ],
+    "moreTitle": "Also shipped",
+    "more": [
+      {
+        "name": "Healthcare Recruiting SaaS",
+        "domain": "Full-stack product",
+        "blurb": "Monorepo with multi-role auth, RTK Query + OpenAPI codegen, Storybook, and Cypress.",
+        "stack": "NestJS · Next.js · Cognito · RTK Query"
+      },
+      {
+        "name": "Telegram Mini App",
+        "domain": "Interactive product",
+        "blurb": "Game states, shop, referrals, payments, and admin — Next.js + Deno stack.",
+        "stack": "Next.js · Telegram Mini Apps · Deno"
+      },
+      {
+        "name": "iGaming Client",
+        "domain": "Product UI",
+        "blurb": "Catalogue, bonuses, referral network, 15+ modal flows, and embedded spin micro-frontend.",
+        "stack": "React 19 · Vite · Redux Toolkit · i18n"
+      },
+      {
+        "name": "DeFi Client",
+        "domain": "Web3",
+        "blurb": "Liquidity pools: wallet connect, swap UI, live charts, and pool creation wizard.",
+        "stack": "React · ethers.js · GraphQL · Recharts"
+      }
+    ]
+  },
+  "ai": {
+    "eyebrow": "AI-powered products",
+    "title": "Frontend for products with AI in the loop",
+    "subtitle": "AI was a product capability — my focus stayed on UX, async state, and interfaces people can trust.",
+    "items": [
+      {
+        "name": "Collaborative Visual Editor",
+        "domain": "Canvas · Generation UI",
+        "summary": "Users create, edit, and organise visual content on an interactive canvas with AI-powered generation.",
+        "role": "Frontend for complex canvas UX: editor flows, async requests, generation results, and reusable interactive components.",
+        "stack": ["React", "TypeScript", "Canvas UI"]
+      },
+      {
+        "name": "Translation Workflow Platform",
+        "domain": "SaaS · LLM workflows",
+        "summary": "Translation management with AI-assisted steps inside a familiar review and processing workflow.",
+        "role": "Built frontend flows for upload, review, and processing — integrating AI features without breaking the operator mental model.",
+        "stack": ["Next.js", "TypeScript", "Forms", "REST API"]
+      },
+      {
+        "name": "AI Image Bot & TMA tools",
+        "domain": "Telegram · Generative UI",
+        "summary": "Prompt-to-image experiences and supporting product surfaces around generative features.",
+        "role": "Product frontend and API integration; AI models as backend capability, UX and delivery as the frontend job.",
+        "stack": ["React", "Deno", "Telegram APIs"]
+      }
+    ]
+  },
+  "craft": {
+    "eyebrow": "Engineering proof",
+    "title": "What I actually bring to a frontend team",
+    "items": [
+      {
+        "title": "Enterprise & product UI",
+        "text": "Admin panels, role-based flows, dense tables, calendars, wizards, and reporting — interfaces people use every day."
+      },
+      {
+        "title": "Architecture that scales",
+        "text": "TypeScript-first React/Next.js, design systems, Storybook, monorepos (Nx), clear state and data-fetching boundaries."
+      },
+      {
+        "title": "Quality & delivery",
+        "text": "Responsive UI, performance awareness, accessibility basics, Jest/Cypress, and shipping with product and backend partners."
+      },
+      {
+        "title": "API & product edge",
+        "text": "REST/GraphQL integration, forms and validation, i18n, and enough full-stack range to own features end-to-end when needed."
+      }
+    ],
+    "rangeTitle": "Additional range",
+    "rangeText": "Telegram Mini Apps, Web3 client work, NestJS/Deno backends, and mentoring — useful breadth around a strong frontend core. AI product UI is covered in its own section above."
+  },
+  "experience": {
+    "eyebrow": "Path",
+    "title": "From a full-stack start to product frontend focus",
+    "intro": "After an intensive full-stack program I joined a US product company early, then deepened into enterprise SaaS, booking, HR, e-commerce, Mini Apps, and AI-adjacent products. Client names are omitted under NDA — domains and ownership stay explicit.",
+    "items": [
+      {
+        "period": "2024 – Present",
+        "role": "Senior Frontend",
+        "context": "Enterprise HR & product platforms",
+        "points": [
+          "Complex calendar / workforce UI, role-based flows, and reporting modules",
+          "Shipping product frontend across SaaS and AI-adjacent interfaces"
+        ]
+      },
+      {
+        "period": "2024",
+        "role": "Frontend Engineer",
+        "context": "Aviation booking platform",
+        "points": [
+          "Booking UI and design-system work in an Nx monorepo",
+          "API integration and performance-minded delivery for critical flows"
+        ]
+      },
+      {
+        "period": "2023",
+        "role": "Frontend / Next.js",
+        "context": "E-commerce & content products",
+        "points": [
+          "Commercial storefront and corporate / content sites",
+          "WordPress → React migration and content tooling"
+        ]
+      },
+      {
+        "period": "2020 – 2023",
+        "role": "Frontend React / Next.js",
+        "context": "US product company · Web3 & enterprise",
+        "points": [
+          "Multi-year product UI across Web3 and enterprise tools",
+          "Reusable components, GraphQL clients, and UX for complex wizards"
+        ]
+      }
+    ],
+    "side": [
+      {
+        "title": "Mentorship",
+        "text": "3+ years helping developers grow in React, Next.js, and Vite — from first steps to commercial-level confidence."
+      },
+      {
+        "title": "Interactive products",
+        "text": "Telegram games, canvas editors, and browser experiments — useful when product UI needs motion and state craft."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Let’s talk",
+    "title": "Building a product frontend team — or need a senior who owns complex UI?",
+    "lead": "Open to remote Senior Frontend / Full-Stack JavaScript roles. EN/UK. Prefer products with real workflows over brochure sites.",
+    "cta": "Message on Telegram",
+    "mail": "LinkedIn",
+    "linksTitle": "Elsewhere"
+  },
+  "footer": {
+    "copy": "Yuliia Volodina · Senior Frontend / Full-Stack JavaScript Developer · 2026",
+    "note": "Built with Vite, React, and intentional motion — not a template."
+  },
+  "a11y": {
+    "skip": "Skip to content",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "langEn": "Switch to English",
+    "langUk": "Switch to Ukrainian",
+    "themeLight": "Switch to light theme",
+    "themeDark": "Switch to dark theme"
+  }
+}

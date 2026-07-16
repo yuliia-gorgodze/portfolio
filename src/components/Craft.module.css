@@ -1,0 +1,77 @@
+.section {
+  background: linear-gradient(160deg, #1a1918 0%, #2a1a1c 55%, #1c1814 100%);
+  color: #efece7;
+}
+
+:global(html[data-theme="dark"]) .section {
+  background: linear-gradient(160deg, #181614 0%, #241618 55%, #1a1612 100%);
+  border-block: 1px solid var(--line);
+}
+
+.section :global(.eyebrow) {
+  color: var(--signal);
+}
+
+.section :global(.sectionTitle) {
+  color: #fff;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.item {
+  padding-top: 1.25rem;
+  border-top: 1px solid color-mix(in srgb, #fff 14%, transparent);
+}
+
+.num {
+  display: block;
+  margin-bottom: 0.65rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--signal);
+}
+
+.item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.55rem;
+  color: #fff;
+}
+
+.item p {
+  color: color-mix(in srgb, #efece7 78%, transparent);
+  max-width: 42ch;
+}
+
+.range {
+  margin-top: 2.75rem;
+  padding: 1.5rem;
+  border: 1px solid color-mix(in srgb, #fff 14%, transparent);
+  background: color-mix(in srgb, #000 22%, transparent);
+}
+
+.range h3 {
+  font-size: 0.85rem;
+  margin-bottom: 0.55rem;
+  color: var(--signal);
+  font-family: var(--font-mono);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.range p {
+  color: color-mix(in srgb, #efece7 85%, transparent);
+  max-width: 70ch;
+}
+
+@media (min-width: 800px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 2.5rem;
+  }
+}

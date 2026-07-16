@@ -1,0 +1,130 @@
+.section {
+  border-top: 1px solid var(--line);
+}
+
+.intro {
+  max-width: none;
+  margin-inline: auto;
+  margin-bottom: 2.5rem;
+}
+
+.intro :global(.sectionTitle) {
+  max-width: none;
+}
+
+.intro :global(.sectionLead) {
+  max-width: 72ch;
+}
+
+.timeline {
+  display: grid;
+  gap: 0;
+  max-width: none;
+  margin-inline: auto;
+}
+
+.timeline > li {
+  display: grid;
+  gap: 0.55rem;
+  padding: 1.35rem 0;
+  border-top: 1px solid color-mix(in srgb, var(--line) 75%, transparent);
+}
+
+.timeline > li:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.period {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-family: var(--font-mono);
+}
+
+.timeline h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
+}
+
+.context {
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 0.65rem;
+}
+
+.timeline ul {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.timeline ul li {
+  position: relative;
+  padding-left: 1rem;
+  color: var(--ink-soft);
+}
+
+.timeline ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.65em;
+  width: 0.35rem;
+  height: 0.35rem;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.side {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2.75rem;
+  margin-inline: auto;
+  padding-top: 2rem;
+  border-top: 1px solid var(--line);
+  max-width: none;
+}
+
+.side article h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.45rem;
+}
+
+.side article p {
+  color: var(--ink-soft);
+  max-width: 42ch;
+}
+
+@media (min-width: 720px) {
+  .timeline > li {
+    grid-template-columns: 11rem minmax(0, 1fr);
+    column-gap: 2.5rem;
+    align-items: start;
+  }
+
+  .period {
+    padding-top: 0.2rem;
+  }
+
+  .intro :global(.sectionLead) {
+    max-width: 80ch;
+  }
+
+  .side {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 3.5rem;
+  }
+
+  .side article p {
+    max-width: none;
+  }
+}
+
+@media (min-width: 1100px) {
+  .section :global(.container) {
+    width: min(100% - 2.5rem, 1280px);
+  }
+}

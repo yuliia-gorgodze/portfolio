@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("theme");
+          var theme = stored === "light" || stored === "dark" ? stored : "dark";
+          document.documentElement.dataset.theme = theme;
+          document.documentElement.style.colorScheme = theme;
+        } catch (e) {}
+      })();
+    </script>
+    <meta
+      name="description"
+      content="Yuliia Volodina — Senior Frontend / Full-Stack JavaScript Developer. SaaS, AI tools, real-time apps, Telegram mini-apps, Web3 — React, Next.js, TypeScript."
+    />
+    <meta name="theme-color" content="#121110" />
+    <meta property="og:title" content="Yuliia Volodina — Senior Frontend Engineer" />
+    <meta
+      property="og:description"
+      content="I build resilient product interfaces for complex workflows — design systems, role-based enterprise UI, and performance-critical flows."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yuliia-volodina.github.io/portfolio/" />
+    <meta
+      property="og:image"
+      content="https://yuliia-volodina.github.io/portfolio/media/hero-1600.jpg"
+    />
+    <link rel="icon" href="/portfolio/favicon.ico" />
+    <link rel="apple-touch-icon" href="/portfolio/apple-touch-icon.png" />
+    <link rel="manifest" href="/portfolio/manifest.json" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/portfolio/media/hero-1600.avif"
+      type="image/avif"
+      imagesrcset="/portfolio/media/hero-900.avif 600w, /portfolio/media/hero-1600.avif 1066w"
+      imagesizes="(max-width: 860px) 100vw, 44vw"
+    />
+    <title>Yuliia Volodina — Senior Frontend / Full-Stack Developer</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

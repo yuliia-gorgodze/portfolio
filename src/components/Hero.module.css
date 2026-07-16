@@ -1,0 +1,120 @@
+.hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  /* header is fixed overlay — shader runs under it */
+  padding: calc(var(--header-h) + clamp(0.25rem, 1vw, 0.55rem)) 0
+    clamp(2rem, 5vw, 3.5rem);
+}
+
+.grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: clamp(1.5rem, 4vw, 2.75rem);
+  align-items: center;
+}
+
+.media {
+  position: relative;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--paper-2) 70%, transparent);
+  aspect-ratio: 4 / 5;
+  width: min(100%, 280px);
+  margin-inline: auto;
+  max-height: min(38vh, 300px);
+}
+
+.media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 18%;
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.name {
+  font-size: clamp(2.2rem, 7vw, 3.6rem);
+  letter-spacing: -0.045em;
+  line-height: 1.05;
+  font-weight: 700;
+  max-width: 14ch;
+  color: var(--ink);
+}
+
+.vocation {
+  margin-top: 0.45rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 3.2vw, 1.65rem);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+  max-width: 24ch;
+  color: var(--ink);
+}
+
+.location {
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 3.5vw, 1.85rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  color: var(--muted);
+  max-width: 16ch;
+}
+
+.lead {
+  max-width: 48ch;
+  margin-top: 0.85rem;
+  color: var(--ink-soft);
+  font-size: clamp(0.95rem, 2.4vw, 1.05rem);
+  line-height: 1.55;
+}
+
+.ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.15rem;
+}
+
+@media (min-width: 700px) and (max-width: 999px) {
+  .grid {
+    grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
+    gap: 1.5rem;
+  }
+
+  .media {
+    width: 100%;
+    margin-inline: 0;
+    max-height: min(48vh, 400px);
+  }
+}
+
+@media (min-width: 1000px) {
+  .grid {
+    grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+    gap: 3rem;
+    min-height: calc(100svh - var(--header-h) - 0.5rem);
+    /* optical lift: extra bottom space so centered block sits a bit higher */
+    padding-bottom: clamp(1.5rem, 6vh, 4rem);
+  }
+
+  .media {
+    width: 100%;
+    max-width: 520px;
+    height: min(70vh, 620px);
+    max-height: none;
+    aspect-ratio: auto;
+    margin-inline: 0;
+  }
+
+  .name {
+    font-size: clamp(2.8rem, 4vw, 3.9rem);
+  }
+}

@@ -1,0 +1,231 @@
+.header {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 50;
+  height: var(--header-h);
+  background: transparent;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.25s ease, background 0.25s ease,
+    backdrop-filter 0.25s ease, -webkit-backdrop-filter 0.25s ease;
+}
+
+.scrolled {
+  border-bottom-color: var(--line);
+  background: color-mix(in srgb, var(--paper) 68%, transparent);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.menuOpen {
+  border-bottom-color: var(--line);
+  background: var(--paper);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  gap: 1rem;
+}
+
+.brand {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: -0.05em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.brand:hover {
+  color: var(--accent);
+}
+
+.desktop {
+  display: none;
+  gap: 1.15rem;
+  align-items: center;
+}
+
+.desktop a {
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--ink-soft);
+  letter-spacing: -0.01em;
+}
+
+.desktop a:hover {
+  color: var(--accent);
+}
+
+.contactBtn {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.35rem;
+  padding: 0.45rem 1rem;
+  background: var(--accent);
+  color: var(--on-accent) !important;
+  font-weight: 700;
+}
+
+.contactBtn:hover {
+  background: var(--accent-deep);
+  color: var(--on-accent) !important;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.lang {
+  display: inline-flex;
+  height: 2rem;
+  border: 1px solid var(--line);
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.lang button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 0.55rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.activeLang {
+  background: var(--ink);
+  color: var(--paper) !important;
+}
+
+.theme {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink-soft);
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.theme:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.themeIcon {
+  display: inline-flex;
+}
+
+.burger {
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  padding: 0.5rem;
+}
+
+.burger span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: var(--ink);
+  transform-origin: center;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.2s ease;
+}
+
+.burgerOpen span:first-child {
+  transform: translateY(4px) rotate(45deg);
+}
+
+.burgerOpen span:last-child {
+  transform: translateY(-4px) rotate(-45deg);
+}
+
+.mobile {
+  position: fixed;
+  inset: var(--header-h) 0 0 0;
+  z-index: 45;
+  padding: 1.5rem 1.5rem 2.5rem;
+  background: var(--paper);
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+
+.mobilePanel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-height: min(70vh, 28rem);
+  justify-content: center;
+}
+
+.mobileLink {
+  display: grid;
+  grid-template-columns: 2.5rem 1fr;
+  align-items: baseline;
+  gap: 0.85rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--line) 70%, transparent);
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.mobileLink:last-child {
+  border-bottom: 0;
+}
+
+.mobileLink:hover .mobileLabel,
+.mobileLink:focus-visible .mobileLabel {
+  color: var(--accent);
+}
+
+.mobileIndex {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+}
+
+.mobileLabel {
+  font-family: var(--font-display);
+  font-size: clamp(1.85rem, 8vw, 2.45rem);
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  line-height: 1.05;
+  transition: color 0.2s ease;
+}
+
+@media (min-width: 860px) {
+  .desktop {
+    display: flex;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .mobile {
+    display: none !important;
+  }
+}

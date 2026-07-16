@@ -1,0 +1,34 @@
+.wrap {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.fallback {
+  position: absolute;
+  inset: 0;
+}
+
+.light .fallback {
+  background:
+    radial-gradient(900px 520px at 20% 30%, #e8d0ce 0%, transparent 55%),
+    radial-gradient(700px 480px at 80% 70%, #ddd4c4 0%, transparent 50%),
+    #e4dfd7;
+}
+
+.dark .fallback {
+  background:
+    radial-gradient(900px 520px at 20% 30%, #3a181c 0%, transparent 55%),
+    radial-gradient(700px 480px at 80% 70%, #2a2218 0%, transparent 50%),
+    #121110;
+}
+
+.canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}

@@ -1,0 +1,224 @@
+{
+  "shortName": "Yuliia.V",
+  "menu": {
+    "work": "Роботи",
+    "craft": "Підхід",
+    "ai": "AI",
+    "experience": "Досвід",
+    "contact": "Контакт"
+  },
+  "hero": {
+    "name": "Я — Юлія Володіна",
+    "vocation": "Senior Frontend / Full-Stack JavaScript Developer",
+    "location": "живу в Україні.",
+    "lead": "Універсальна розробниця з понад 5 роками комерційного досвіду: SaaS-платформи, AI-інструменти, collaborative editors, real-time застосунки, Telegram mini-apps, Web3-інтеграції та високопродуктивні інтерфейси на React, Next.js, TypeScript, Deno і Node.js.",
+    "ctaPrimary": "Обрані кейси",
+    "ctaSecondary": "Зв’язатися",
+    "alt": "Портрет Юлії Володіної в червоному піджаку"
+  },
+  "work": {
+    "eyebrow": "Обрані роботи",
+    "title": "Чотири кейси, які показують, як я думаю про product UI",
+    "subtitle": "Проблема → система → результат.",
+    "explore": "Деталі",
+    "problem": "Проблема",
+    "system": "Система",
+    "outcome": "Результат",
+    "stack": "Стек",
+    "featured": [
+      {
+        "id": "workforce",
+        "name": "Workforce Platform",
+        "domain": "Enterprise HR",
+        "summary": "Планування змін, attendance, відпустки, календарі та звітність для щоденних операційних команд.",
+        "problem": "HR-операціям потрібен був один інтерфейс для багатьох ролей — planner-и, менеджери, співробітники — з календарями, таблицями та формами під щоденне навантаження.",
+        "system": "Складні frontend-модулі на Next.js App Router: FullCalendar + drag-and-drop, role-based UI, Redux Toolkit + TanStack Query, Ant Design, i18n, Storybook і Jest.",
+        "outcome": "Підтримуваний enterprise-frontend для складних workforce-сценаріїв — reusable UI, зрозумілі межі стану та задокументовані компоненти.",
+        "stack": ["Next.js", "React", "TypeScript", "Ant Design", "Redux Toolkit", "TanStack Query", "Storybook"]
+      },
+      {
+        "id": "booking",
+        "name": "Flight Booking Platform",
+        "domain": "Aviation · Enterprise",
+        "summary": "Enterprise-бронювання авіаквитків: пошук, пасажири, оплата та manage booking.",
+        "problem": "Багатокроковий booking мав лишатися консистентним від пошуку до оплати всередині великого Nx monorepo та спільної design system.",
+        "system": "React UI для критичних booking-флоу з Radix, Redux plugins, Storybook і Module Federation у client SDK архітектурі.",
+        "outcome": "Повторно використовувані booking-патерни та компоненти дизайн-системи для бізнес-критичних сценаріїв у monorepo.",
+        "stack": ["Nx", "React", "TypeScript", "Radix UI", "Redux", "Storybook", "Module Federation"]
+      },
+      {
+        "id": "commerce",
+        "name": "Auto Parts Commerce",
+        "domain": "E-commerce",
+        "summary": "Storefront + admin: каталог, кошик, checkout, замовлення та контент.",
+        "problem": "Потрібні були і клієнтський магазин, і операційна адмінка — фільтри за авто, оплата та контент-флоу в одному monorepo.",
+        "system": "Next.js storefront і MUI admin у Nx з NestJS API, Prisma/PostgreSQL, платежами, OAuth та управлінням замовленнями/контентом.",
+        "outcome": "Наскрізний продукт: шлях покупки та admin-інструменти як одна система.",
+        "stack": ["Next.js", "Nx", "NestJS", "TypeScript", "MUI", "Prisma", "PostgreSQL"]
+      },
+      {
+        "id": "agreements",
+        "name": "Agreements Platform",
+        "domain": "Web3 · SaaS UI",
+        "summary": "Багатокроковий wizard угод з wallet-автентифікацією, GraphQL і IPFS.",
+        "problem": "Створення й підпис угод — довгий крихкий сценарій: гаманці, валідація, імпорти й прев’ю мали відчуватися надійно.",
+        "system": "Великий frontend: multi-step wizard, форми/валідація, GraphQL client + codegen, wallet connectors, IPFS, плюс маркетинговий сайт з motion.",
+        "outcome": "Продуктовий wizard UX, де блокчейн — лише контекст; головне — ясність у складних бізнес-кроках.",
+        "stack": ["Next.js", "React", "TypeScript", "GraphQL", "IPFS", "Framer Motion"]
+      }
+    ],
+    "moreTitle": "Також",
+    "more": [
+      {
+        "name": "Healthcare Recruiting SaaS",
+        "domain": "Full-stack product",
+        "blurb": "Monorepo з multi-role auth, RTK Query + OpenAPI codegen, Storybook і Cypress.",
+        "stack": "NestJS · Next.js · Cognito · RTK Query"
+      },
+      {
+        "name": "Telegram Mini App",
+        "domain": "Interactive product",
+        "blurb": "Стани гри, магазин, реферали, платежі та admin — Next.js + Deno.",
+        "stack": "Next.js · Telegram Mini Apps · Deno"
+      },
+      {
+        "name": "iGaming Client",
+        "domain": "Product UI",
+        "blurb": "Каталог, бонуси, реферальна мережа, 15+ modal flows і embedded spin micro-frontend.",
+        "stack": "React 19 · Vite · Redux Toolkit · i18n"
+      },
+      {
+        "name": "DeFi Client",
+        "domain": "Web3",
+        "blurb": "Liquidity pools: підключення гаманця, swap UI, live-чарти та wizard створення пулу.",
+        "stack": "React · ethers.js · GraphQL · Recharts"
+      }
+    ]
+  },
+  "ai": {
+    "eyebrow": "AI-powered products",
+    "title": "Frontend для продуктів, де AI в процесі",
+    "subtitle": "AI був продуктовою можливістю — мій фокус лишався на UX, async-станах і інтерфейсах, яким можна довіряти.",
+    "items": [
+      {
+        "name": "Collaborative Visual Editor",
+        "domain": "Canvas · Generation UI",
+        "summary": "Користувачі створюють, редагують і організовують візуальний контент на інтерактивному полотні з AI-генерацією.",
+        "role": "Frontend для складного canvas UX: editor-флоу, асинхронні запити, результати генерації та reusable інтерактивні компоненти.",
+        "stack": ["React", "TypeScript", "Canvas UI"]
+      },
+      {
+        "name": "Translation Workflow Platform",
+        "domain": "SaaS · LLM workflows",
+        "summary": "Управління перекладами з AI-кроками всередині звичного review/processing workflow.",
+        "role": "Frontend-сценарії завантаження, перегляду та обробки — AI без ламання операторської моделі роботи.",
+        "stack": ["Next.js", "TypeScript", "Forms", "REST API"]
+      },
+      {
+        "name": "AI Image Bot & TMA tools",
+        "domain": "Telegram · Generative UI",
+        "summary": "Prompt-to-image сценарії та супутні продуктові поверхні навколо generative-фіч.",
+        "role": "Product frontend і інтеграція з API; моделі — на бекенді, UX і delivery — зона frontend.",
+        "stack": ["React", "Deno", "Telegram APIs"]
+      }
+    ]
+  },
+  "craft": {
+    "eyebrow": "Engineering proof",
+    "title": "Що я реально приношу у frontend-команду",
+    "items": [
+      {
+        "title": "Enterprise і product UI",
+        "text": "Адмінки, рольові сценарії, щільні таблиці, календарі, wizard-и та звітність — інтерфейси щоденної роботи."
+      },
+      {
+        "title": "Архітектура, що масштабується",
+        "text": "TypeScript-first React/Next.js, design systems, Storybook, monorepo (Nx), чіткі межі state і data-fetching."
+      },
+      {
+        "title": "Якість і delivery",
+        "text": "Responsive UI, performance, базовий a11y, Jest/Cypress і спільна робота з product та backend."
+      },
+      {
+        "title": "API і продуктова межа",
+        "text": "REST/GraphQL, форми й валідація, i18n і достатньо full-stack діапазону, щоб вести фічі end-to-end."
+      }
+    ],
+    "rangeTitle": "Додатковий діапазон",
+    "rangeText": "Telegram Mini Apps, Web3-клієнти, NestJS/Deno backends і менторство — корисна ширина навколо сильного frontend-ядра. AI product UI винесено в окрему секцію вище."
+  },
+  "experience": {
+    "eyebrow": "Шлях",
+    "title": "Від full-stack старту до продуктового frontend-фокусу",
+    "intro": "Після інтенсивної full-stack програми рано приєдналася до американської продуктової компанії, далі — enterprise SaaS, booking, HR, e-commerce, Mini Apps і AI-суміжні продукти. Назви клієнтів не вказую (NDA) — домени й зона ownership залишаються явними.",
+    "items": [
+      {
+        "period": "2024 – Present",
+        "role": "Senior Frontend",
+        "context": "Enterprise HR і продуктові платформи",
+        "points": [
+          "Складні calendar / workforce UI, role-based флоу та модулі звітності",
+          "Доставка product frontend у SaaS та AI-суміжних інтерфейсах"
+        ]
+      },
+      {
+        "period": "2024",
+        "role": "Frontend Engineer",
+        "context": "Aviation booking platform",
+        "points": [
+          "UI бронювання та робота з design system у Nx monorepo",
+          "Інтеграції API та performance-орієнтована доставка критичних флоу"
+        ]
+      },
+      {
+        "period": "2023",
+        "role": "Frontend / Next.js",
+        "context": "E-commerce і контент-продукти",
+        "points": [
+          "Комерційний storefront і корпоративні / контентні сайти",
+          "Міграція WordPress → React і контент-інструменти"
+        ]
+      },
+      {
+        "period": "2020 – 2023",
+        "role": "Frontend React / Next.js",
+        "context": "US product company · Web3 & enterprise",
+        "points": [
+          "Багато років product UI у Web3 та enterprise-інструментах",
+          "Reusable компоненти, GraphQL-клієнти й UX складних wizard-ів"
+        ]
+      }
+    ],
+    "side": [
+      {
+        "title": "Менторство",
+        "text": "3+ роки допомагаю розробникам рости в React, Next.js і Vite — від перших кроків до комерційної впевненості."
+      },
+      {
+        "title": "Інтерактивні продукти",
+        "text": "Telegram-ігри, canvas-редактори та browser-експерименти — коли product UI потребує motion і роботи зі станами."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Поговоримо",
+    "title": "Збираєте product frontend команду — або шукаєте senior, яка веде складний UI?",
+    "lead": "Відкрита до remote ролей Senior Frontend / Full-Stack JavaScript. EN/UK. Краще продукти з реальними сценаріями, ніж brochure-сайти.",
+    "cta": "Написати в Telegram",
+    "mail": "LinkedIn",
+    "linksTitle": "Також"
+  },
+  "footer": {
+    "copy": "Юлія Володіна · Senior Frontend / Full-Stack JavaScript Developer · 2026",
+    "note": "Зібрано на Vite, React і навмисному motion — не шаблон."
+  },
+  "a11y": {
+    "skip": "Перейти до контенту",
+    "menuOpen": "Відкрити меню",
+    "menuClose": "Закрити меню",
+    "langEn": "Перемкнути на англійську",
+    "langUk": "Перемкнути на українську",
+    "themeLight": "Увімкнути світлу тему",
+    "themeDark": "Увімкнути темну тему"
+  }
+}
